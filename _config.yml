@@ -28,11 +28,11 @@ author:
   bio              : "Graduate student studying programming languages, compilers, and category theory."
   location         : "San Francisco Bay Area"
   employer         : "Stanford University"
-  uri              : # URL
+  uri              : https://profiles.stanford.edu/bryce-goldman
   email            : "brycegoldman@stanford.edu" 
 
   # Academic websites
-  academia         : https://profiles.stanford.edu/bryce-goldman # URL
+  academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
