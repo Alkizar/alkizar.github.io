@@ -12,24 +12,26 @@ redirect_from:
 Education
 ======
 * M.S. in Computer Science, Stanford University, 2026 (expected)
+  * Relevant Coursework: Compilers, Program Analysis and Compiler Optimizations, Programming Languages
 * B.A. in Mathematics, UC Berkeley, 2023
+  * Honors: Graduated with highest honors in mathematics and general scholarship, Recipient of the <a href="https://math.berkeley.edu/about/honors-awards/dorothea-klumpke-roberts-prize">Dorothea Klumpke Roberts prize</a>
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Summer 2024: Student Assistant
+  * San Francisco State University
+  * Duties included: Writing course notes (code and exposition) for mechanistic interpretability seminar
+  * Supervisor: Professor Daniel Huang
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Fall 2023: Course Reader
+  * UC Berkeley
+  * Duties included: Grading student assignments for courses in mathematical logic, computability theory, and algebraic topology
+  * Supervisors: Professor Antonio Montalban, Professor John Lott
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Summer 2022: Undergraduate Research Fellow
+  * University of Chicago
+  * Duties included: Conducting research in stable homotopy theory and category theory; see <a href="google.com">my senior thesis</a>
+  * Supervisor: Professor J. Peter May
   
 Skills
 ======
@@ -60,4 +62,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Former president of the <a href="https://math.berkeley.edu/~musa/">Mathematics Undergraduate Student Association</a> at UC Berkeley
