@@ -1,17 +1,18 @@
 ---
-title: "Teaching experience 1"
+title: "MUSA 74: Transition to Upper Division Mathematics"
 collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+type: "Undergraduate Course"
+permalink: /teaching/2021-spring-teaching
+venue: "UC Berkeley, Mathematics"
+date: 2021-01-01
+location: "Berkeley, CA"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+After taking the class myself in Fall 2019, I joined the course staff for <a href="https://math.berkeley.edu/~musa/">MUSA</a>'s student-run introduction to proof-writing. The course is intended for lower division students seeking to gain experience writing formal proofs to ease their transition into more advanced mathematical coursework. In addition to giving lectures for the class, I also rewrote a handful of chapters of the <a href="https://musa-berk.github.io/MUSA-74/notes.pdf">course notes</a>. I also assisted in teaching the course in Spring 2020, which is how I first became involved in MUSA at Berkeley.
 
-Heading 1
+Syllabus
 ======
+The course syllabus can be found <a href="https://decal-file-uploads.s3.amazonaws.com/uploads/attachments/000/005/444/original/MUSA74-Sp21-Syllabus.pdf">here</a>.
 
 Heading 2
 ======

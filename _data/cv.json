@@ -3,61 +3,42 @@
     "name": "Bryce Goldman",
     "email": "brycegoldman@stanford.edu",
     "phone": "",
-    "website": "https://devnull.github.io",
+    "website": "https://alkizar.github.io",
     "summary": "Graduate student studying programming languages and compilers at Stanford University.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Oakland, CA",
+      "city": "San Fransisco Bay Area",
       "countryCode": "US",
       "region": ""
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "http://orcid.org/yourorcidurl"
-      },
-      {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "alkizar",
+        "url": "https://github.com/alkizar"
       }
     ]
   },
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "Stanford University",
+      "area": "M.S. in Computer Science (Software Theory)",
       "studyType": "",
       "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "endDate": "2026",
+      "gpa": 3.95,
+      "courses": ["Compilers", "Program Analysis and Compiler Optimizations", "Programming Languages"]
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "UC Berkeley",
+      "area": "B.A. in Mathematics",
       "studyType": "",
       "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "endDate": "2023",
+      "gpa": 3.98,
+      "courses": ["Algebraic Topology", "Homological Algebra", "Categorical Homotopy Theory"]
     }
   ],
   "skills": [],
