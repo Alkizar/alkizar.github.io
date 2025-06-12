@@ -2,7 +2,7 @@
 title: "MUSA 74: Transition to Upper Division Mathematics"
 collection: teaching
 type: "Undergraduate Course"
-permalink: /teaching/2021-spring-teaching
+permalink: /teaching/musa74
 venue: "UC Berkeley, Mathematics"
 date: 2021-01-01
 location: "Berkeley, CA"
@@ -13,9 +13,3 @@ After taking the class myself in Fall 2019, I joined the course staff for <a hre
 Syllabus
 ======
 The course syllabus can be found <a href="https://decal-file-uploads.s3.amazonaws.com/uploads/attachments/000/005/444/original/MUSA74-Sp21-Syllabus.pdf">here</a>.
-
-Heading 2
-======
-
-Heading 3
-======
