@@ -25,10 +25,10 @@ author:
   avatar           : "profile.png"
   name             : "Bryce Goldman"
   pronouns         : "he/him" # example: "she/her"  
-  bio              : "Graduate student studying programming languages, compilers, and category theory."
+  bio              : "Master's student studying programming languages, compilers, and category theory."
   location         : "San Francisco Bay Area"
   employer         : "Stanford University"
-  uri              : https://profiles.stanford.edu/bryce-goldman
+  uri              : #https://profiles.stanford.edu/bryce-goldman
   email            : "brycegoldman@stanford.edu" 
 
   # Academic websites

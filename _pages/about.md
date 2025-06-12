@@ -19,7 +19,7 @@ Background
 
 Current projects
 ------
-[formalizing data-flow analysis as a functorial construct]
+[formalizing data-flow analysis as a functorial construct; labs you're in]
 
 Extracurricular miscellany
 ------
