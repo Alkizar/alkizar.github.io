@@ -24,7 +24,7 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Bryce Goldman"
-  pronouns         : "he/him" # example: "she/her"  
+  pronouns         : "He/Him" # example: "she/her"  
   bio              : "Master's student studying programming languages, compilers, and category theory."
   location         : "San Francisco Bay Area"
   employer         : "Stanford University"
