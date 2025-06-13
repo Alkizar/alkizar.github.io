@@ -22,7 +22,7 @@ repository               : "alkizar/alkizar.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.PNG"
   name             : "Bryce Goldman"
   pronouns         : "he/him" # example: "she/her"  
   bio              : "Master's student studying programming languages, compilers, and category theory."
