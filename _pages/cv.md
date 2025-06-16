@@ -21,28 +21,44 @@ Work experience
 * Summer 2024: Student Assistant
   * San Francisco State University
   * Duties included: Writing course notes (code and exposition) for mechanistic interpretability seminar
-  * Supervisor: Professor Daniel Huang
+  * Supervisor: Prof. Daniel Huang
 
 * Fall 2023: Course Reader
   * UC Berkeley
   * Duties included: Grading student assignments for courses in mathematical logic, computability theory, and algebraic topology
-  * Supervisors: Professor Antonio Montalban, Professor John Lott
+  * Supervisors: Prof. Antonio Montalban, Prof. John Lott
 
 * Summer 2022: Undergraduate Research Fellow
   * University of Chicago
   * Duties included: Conducting research in stable homotopy theory and category theory; see <a href="google.com">my senior thesis</a>
-  * Supervisor: Professor J. Peter May
+  * Supervisor: Prof. J. Peter May
   
-Skills
+Technical Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
+* Languages: 
+  * Python
+  * C++
+  * Java
+  * Haskell
+  * C
+  * Javascript
+* Toolkits:
+  * Bison (Yacc)
+  * Flex
+  * PyTorch
+  * NumPy
+  * Qiskit
+  * SciPy
+* Other:
+  * LaTeX
+  * Agda
+  * Git
+  * Linux
+  * HTML
+  * cvc5
 * Skill 3
 
-Publications
+Projects
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
@@ -63,3 +79,4 @@ Teaching
 Service and leadership
 ======
 * Former president of the <a href="https://math.berkeley.edu/~musa/">Mathematics Undergraduate Student Association</a> at UC Berkeley
+* Programming mentor for <a href="https://www.thebluealliance.com/team/4186">FIRST Robotics Competition team 4186</a>
