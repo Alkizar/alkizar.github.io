@@ -38,27 +38,27 @@ Technical Skills
 * Languages: 
   <div id="wrapper">
   <p class="align-left">
-  Python<br>
-  C++
+  ◦ Python<br>
+  ◦ C++
   </p>
   <p class="align-center">
   ▮▮▮▮▯<br>
   ▮▮▮▯▯
   </p>
-</div>
-<style>
-p.align-left {
-    text-align:left;
-    padding:0;
-    margin:0;
-    position:absolute;
-}
-
-p.align-center{
-  text-align: center;
-  margin-left: -50px;
-}
-</style>
+  </div>
+  <style>
+  p.align-left {
+      text-align:left;
+      padding:0;
+      margin:0;
+      position:absolute;
+  }
+  
+  p.align-center{
+    text-align: center;
+    margin-left: -100px;
+  }
+  </style>
 
   * Python        ▮▮▮▮▯
   * C++           ▮▮▮▯▯
