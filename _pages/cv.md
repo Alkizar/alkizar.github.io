@@ -36,7 +36,7 @@ Work experience
 Technical Skills
 ======
 * Languages: 
-<div id="wrapper">
+  * <div id="wrapper">
   <p class="align-left">* Python</p>
   <p class="align-center">▮▮▮▮▯</p>
 </div>
@@ -50,6 +50,7 @@ p.align-left {
 
 p.align-center{
   text-align: center;
+  margin-left: -50px;
 }
 </style>
 
