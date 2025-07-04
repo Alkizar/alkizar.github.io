@@ -36,6 +36,8 @@ Work experience
 Technical Skills
 ======
 * Languages: 
+  * <div id="wrapper"><p class="align-left">Python</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -300px;}</style>
+  * blah blah
   * <div id="wrapper">
   <p class="align-left">
   ○ Python<br>
