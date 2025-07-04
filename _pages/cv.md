@@ -37,18 +37,18 @@ Technical Skills
 ======
 * Languages: 
 <div id="wrapper">
-  <h1 class="align-left">LEFT</h1>
-  <h1 class="align-center">CENTER</h1>
+  <p class="align-left">LEFT</p>
+  <p class="align-center">CENTER</p>
 </div>
 <style>
-h1.align-left {
+p.align-left {
     text-align:left;
     padding:0;
     margin:0;
     position:absolute;
 }
 
-h1.align-center{
+p.align-center{
   text-align: center;
 }
 </style>
