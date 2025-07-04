@@ -36,8 +36,25 @@ Work experience
 Technical Skills
 ======
 * Languages: 
-  * <p align="left">Python</p>        <p align="right">▮▮▮▮▯</p>
-  * <p align="left">C++</p>           <p align="right">▮▮▮▯▯</p>
+<div id="wrapper">
+  <h1 class="align-left">LEFT</h1>
+  <h1 class="align-center">CENTER</h1>
+</div>
+<style>
+h1.align-left {
+    text-align:left;
+    padding:0;
+    margin:0;
+    position:absolute;
+}
+
+h1.align-center{
+  text-align: center;
+}
+</style>
+
+  * Python        ▮▮▮▮▯
+  * C++           ▮▮▮▯▯
   * Java          ▮▮▮▮▯
   * Haskell       ▮▮▮▮▯
   * C             ▮▮▮▯▯
