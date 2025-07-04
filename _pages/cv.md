@@ -36,26 +36,26 @@ Work experience
 Technical Skills
 ======
 * Languages: 
-  * Python
-  * C++
-  * Java
-  * Haskell
-  * C
-  * Javascript
+  * Python        ▮▮▮▮▯
+  * C++           ▮▮▮▯▯
+  * Java          ▮▮▮▮▯
+  * Haskell       ▮▮▮▮▯
+  * C             ▮▮▮▯▯
+  * Javascript    ▮▮▯▯▯
 * Toolkits:
-  * Bison (Yacc)
-  * Flex
-  * PyTorch
-  * NumPy
-  * Qiskit
-  * SciPy
+  * Bison (Yacc)  ▮▮▮▯▯
+  * Flex          ▮▮▮▯▯
+  * PyTorch       ▮▮▮▯▯
+  * NumPy         ▮▮▮▮▯
+  * Qiskit        ▮▮▯▯▯
+  * SciPy         ▮▮▯▯▯
 * Other:
-  * LaTeX
-  * Agda
-  * Git
-  * Linux
-  * HTML
-  * cvc5
+  * LaTeX         ▮▮▮▮▮
+  * Agda          ▮▮▯▯▯
+  * Git           ▮▮▮▮▯
+  * Linux         ▮▮▮▯▯
+  * HTML          ▮▮▯▯▯
+  * cvc5          ▮▮▮▯▯
 * Skill 3
 
 Projects
