@@ -36,8 +36,8 @@ Work experience
 Technical Skills
 ======
 * Languages: 
-  * Python        ▮▮▮▮▯
-  * C++           ▮▮▮▯▯
+  * <p align="left">Python</p>        <p align="right">▮▮▮▮▯</p>
+  * <p align="left">C++</p>           <p align="right">▮▮▮▯▯</p>
   * Java          ▮▮▮▮▯
   * Haskell       ▮▮▮▮▯
   * C             ▮▮▮▯▯
