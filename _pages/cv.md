@@ -44,14 +44,14 @@ Technical Skills
   * <div id="wrapper" class="small-line"><p class="align-left">Rust</p><p class="align-center">▮▮▯▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper" class="small-line"><p class="align-left">Javascript</p><p class="align-center">▮▮▯▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
 * Toolkits:
-  * <div id="wrapper" class="small-line"><p class="align-left">Bison (YACC)</p><p class="align-center">▮▮▮▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
+  * <div id="wrapper" class="small-line"><p class="align-left">Yacc</p><p class="align-center">▮▮▮▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper" class="small-line"><p class="align-left">Flex</p><p class="align-center">▮▮▮▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper" class="small-line"><p class="align-left">Pytorch</p><p class="align-center">▮▮▮▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper" class="small-line"><p class="align-left">NumPy</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper" class="small-line"><p class="align-left">Qiskit</p><p class="align-center">▮▮▯▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper" class="small-line"><p class="align-left">SciPy</p><p class="align-center">▮▮▯▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
 * Other:
-  * <div id="wrapper" class="small-line"><p class="align-left">LaTeX $\latex$</p><p class="align-center">▮▮▮▮▮</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
+  * <div id="wrapper" class="small-line"><p class="align-left">LaTeX</p><p class="align-center">▮▮▮▮▮</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper" class="small-line"><p class="align-left">Agda</p><p class="align-center">▮▮▯▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper" class="small-line"><p class="align-left">Git</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper" class="small-line"><p class="align-left">Linux</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
@@ -67,7 +67,7 @@ Technical Skills
   
   p.align-center{
     text-align: center;
-    margin-left: -30px;
+    margin-left: -20px;
   }
 
   div.small-line{
