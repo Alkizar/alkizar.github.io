@@ -40,16 +40,6 @@ Technical Skills
   * <div id="wrapper"><p class="align-left">C++</p><p class="align-center">▮▮▮▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper"><p class="align-left">Java</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * blah blah
-  * <div id="wrapper">
-  <p class="align-left">
-  ○ Python<br>
-  ○ C++
-  </p>
-  <p class="align-center">
-  ▮▮▮▮▯<br>
-  ▮▮▮▯▯
-  </p>
-  </div>
   <style>
   p.align-left {
       text-align:left;
@@ -63,28 +53,6 @@ Technical Skills
     margin-left: -300px;
   }
   </style>
-
-  * Python        ▮▮▮▮▮
-  * C++           ▮▮▮▯▯
-  * Java          ▮▮▮▮▯
-  * Haskell       ▮▮▮▮▯
-  * C             ▮▮▮▮▮
-  * Javascript    ▮▮▯▯▯
-  * Rust          ▮▮▯▯▯
-* Toolkits:
-  * Bison (Yacc)  ▮▮▮▯▯
-  * Flex          ▮▮▮▯▯
-  * PyTorch       ▮▮▮▯▯
-  * NumPy         ▮▮▮▮▯
-  * Qiskit        ▮▮▯▯▯
-  * SciPy         ▮▮▯▯▯
-* Other:
-  * LaTeX         ▮▮▮▮▮
-  * Agda          ▮▮▯▯▯
-  * Git           ▮▮▮▮▯
-  * Linux         ▮▮▮▯▯
-  * HTML          ▮▮▯▯▯
-  * cvc5          ▮▮▮▯▯
 * Skill 3
 <table>
     <tr>
