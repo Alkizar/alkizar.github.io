@@ -44,13 +44,15 @@ Technical Skills
   p.align-left {
       text-align:left;
       padding:0;
-      margin:0;
+      margin:-0;
       position:absolute;
+      margin-bottom: -100px;
   }
   
   p.align-center{
     text-align: center;
-    margin-left: 0px;
+    margin-left: -300px;
+    margin-bottom: -100px;
   }
   </style>
   * Python        ▮▮▮▮▮
@@ -61,17 +63,6 @@ Technical Skills
   * Javascript    ▮▮▯▯▯
   * Rust          ▮▮▯▯▯
 * Skill 3
-<table>
-    <tr>
-        <td class="titles"> My name :</td>
-        <td>John</td>
-    </tr>
-</table>
-<style>
-  table, th, td {
-    border: 1px solid;
-  }
-</style>
 
 
 Projects
