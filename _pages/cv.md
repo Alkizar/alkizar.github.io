@@ -92,6 +92,11 @@ Technical Skills
         <td>John</td>
     </tr>
 </table>
+<style>
+  table, th, td {
+    border: 1px solid;
+  }
+</style>
 
 
 Projects
