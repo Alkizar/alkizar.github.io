@@ -64,12 +64,13 @@ Technical Skills
   }
   </style>
 
-  * Python        ▮▮▮▮▯
+  * Python        ▮▮▮▮▮
   * C++           ▮▮▮▯▯
   * Java          ▮▮▮▮▯
   * Haskell       ▮▮▮▮▯
-  * C             ▮▮▮▯▯
+  * C             ▮▮▮▮▮
   * Javascript    ▮▮▯▯▯
+  * Rust          ▮▮▯▯▯
 * Toolkits:
   * Bison (Yacc)  ▮▮▮▯▯
   * Flex          ▮▮▮▯▯
@@ -85,6 +86,13 @@ Technical Skills
   * HTML          ▮▮▯▯▯
   * cvc5          ▮▮▮▯▯
 * Skill 3
+<table>
+    <tr>
+        <td class="titles"> My name :</td>
+        <td>John</td>
+    </tr>
+</table>
+
 
 Projects
 ======
