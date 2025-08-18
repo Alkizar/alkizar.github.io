@@ -53,8 +53,8 @@ Technical Skills
   
   p.align-center{
     text-align: center;
-    margin-left: -300px;
-    line-height:0.8;
+    margin-left: -400px;
+    line-height:0.5;
   }
 
   </style>
