@@ -52,7 +52,7 @@ Technical Skills
   p.align-center{
     text-align: center;
     margin-left: -300px;
-    margin-bottom: -100px;
+    margin-bottom: -10px;
   }
   </style>
   * Python        ▮▮▮▮▮
