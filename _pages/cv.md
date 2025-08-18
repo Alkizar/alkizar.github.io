@@ -71,7 +71,7 @@ Technical Skills
   }
 
   div.small-line{
-    line-height: 0.5;
+    line-height: 0.4;
   }
   </style>
 
