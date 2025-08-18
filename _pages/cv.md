@@ -36,8 +36,8 @@ Work experience
 Technical Skills
 ======
 * Languages: 
-  * <div id="wrapper"><p class="align-left">* Python</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper"><p class="align-left">C++</p><p class="align-center">▮▮▮▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
+  * <div id="wrapper" class="small-line"><p class="align-left">Python</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
+  * <div id="wrapper" class="small-line"><p class="align-left">C++</p><p class="align-center">▮▮▮▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper"><p class="align-left">Java</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper"><p class="align-left">Haskell</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper"><p class="align-left">C</p><p class="align-center">▮▮▮▮▮</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
@@ -51,7 +51,7 @@ Technical Skills
   * <div id="wrapper"><p class="align-left">Qiskit</p><p class="align-center">▮▮▯▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper"><p class="align-left">SciPy</p><p class="align-center">▮▮▯▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
 * Other:
-  * <div id="wrapper"><p class="align-left">\\(\latex\\)</p><p class="align-center">▮▮▮▮▮</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
+  * <div id="wrapper"><p class="align-left">LaTeX</p><p class="align-center">▮▮▮▮▮</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper"><p class="align-left">Agda</p><p class="align-center">▮▮▯▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper"><p class="align-left">Git</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper"><p class="align-left">Linux</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
@@ -68,6 +68,10 @@ Technical Skills
   p.align-center{
     text-align: center;
     margin-left: -500px;
+  }
+
+  div.small-line{
+    line-height: 0.5;
   }
   </style>
 
