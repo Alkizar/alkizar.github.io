@@ -67,7 +67,7 @@ Technical Skills
   
   p.align-center{
     text-align: center;
-    margin-left: min(-50px, -50%);
+    margin-left: min(0px, -50%);
   }
 
   div.small-line{
