@@ -46,14 +46,14 @@ Technical Skills
       padding:0;
       margin:-0;
       position:absolute;
-      margin-bottom: -100px;
   }
   
   p.align-center{
     text-align: center;
     margin-left: -300px;
-    margin-bottom: -10px;
+    line-height:0.8;
   }
+
   </style>
   * Python        ▮▮▮▮▮
   * C++           ▮▮▮▯▯
