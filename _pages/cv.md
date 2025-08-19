@@ -36,7 +36,7 @@ Work experience
 Technical Skills
 ======
 * Languages:
-  * <div id="wrapper" class="small-line"><p class="align-left">Python</p><p class="align-center">⬛⬛⬛⬛⬜</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
+  * <div id="wrapper" class="small-line"><p class="align-left">Python</p><p class="align-center">⬜⬜⬜⬜⬛</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper" class="small-line"><p class="align-left">Python</p><p class="align-center">◼◼◼◼◻</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper" class="small-line"><p class="align-left">Python</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
   * <div id="wrapper" class="small-line"><p class="align-left">C++</p><p class="align-center">▮▮▮▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
