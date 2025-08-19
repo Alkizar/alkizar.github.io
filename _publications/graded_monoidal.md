@@ -1,7 +1,7 @@
 ---
 title: "Graded Monoidal Categories and Internalization"
 collection: publications
-category: conferences
+category: papers
 permalink: /project/graded_monoidal_categories
 excerpt: 'A general categorical framework for transforming graded monoidal products into classical "internal" monoidal products.'
 paperurl: 'http://alkizar.github.io/files/Graded_Monoidal_Categories.pdf'

@@ -60,7 +60,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "www.linkedin.com/in/bryce-goldman-2412a9246" # Username
+  linkedin         : "bryce-goldman-2412a9246" # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -81,9 +81,11 @@ publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'TEST TEST' #'Journal Articles'    
+    title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  papers:
+    title: 'Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
