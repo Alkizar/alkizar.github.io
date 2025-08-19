@@ -60,7 +60,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "www.linkedin.com/in/bryce-goldman-2412a9246" # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -81,7 +81,7 @@ publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'TEST TEST' #'Journal Articles'    
   conferences:
     title: 'Conference Papers'
 
