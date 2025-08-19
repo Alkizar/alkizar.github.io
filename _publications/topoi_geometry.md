@@ -11,3 +11,5 @@ A final project I wrote in my senior year as an undergrad for my algebraic geome
 
 <a href='http://alkizar.github.io/files/Topoi_Geometry.pdf'>Download Paper</a>
 <embed src= "http://alkizar.github.io/files/Topoi_Geometry.pdf" type='application/pdf' width= "500" height= "375">
+
+asjdhkasjdh
