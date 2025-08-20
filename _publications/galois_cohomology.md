@@ -1,5 +1,5 @@
 ---
-title: "Topoi and Internal Logic in Algebraic Geometry"
+title: "Galois Cohomology and Kummer Theory"
 collection: publications
 category: papers
 permalink: /project/galois_cohomology

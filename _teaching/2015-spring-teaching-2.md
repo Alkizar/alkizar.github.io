@@ -8,7 +8,7 @@ date: 2022-01-01
 location: "Berkeley, CA"
 ---
 
-[Description of course]
+[Description of course; TODO -- the stuff below is way too pretentious, fix]
 
 Motivation
 ======
