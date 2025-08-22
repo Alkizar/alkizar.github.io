@@ -87,7 +87,9 @@ Projects
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
+    {% if post.category == "papers" %} <!-- TODO -->
+      {% include archive-single-cv.html %}
+    {% endif %}
   {% endfor %}</ul>
   
 Service and leadership
