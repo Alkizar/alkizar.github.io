@@ -30,11 +30,15 @@ Lastly, I am working on reformulating data flow analysis as a functorial constru
 Coursework
 ------
 
-<label for="terms">Academic Term</label>
-<select name="terms" id="terms">
-  <option value="f19">Fall 2019</option>
-  <option value="s20">Spring 2020</option>
-</select>
+<form id="coursework">
+  <label for="terms">Academic Term</label>
+  <select name="terms" id="terms" onchange="updateIframe()">
+    <option value="f19">Fall 2019</option>
+    <option value="s20">Spring 2020</option>
+  </select>
+</form>
+
+<iframe id="dynamicIframe" src="" width="800" height="600"></iframe>
 
 
 Extracurricular miscellany
