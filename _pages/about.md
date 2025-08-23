@@ -33,7 +33,7 @@ Coursework
 <form id="coursework">
   <label for="terms">Academic Term</label>
   <select name="terms" id="terms" onchange="updateIframe()">
-    <option value="f19">Fall 2019</option>
+    <option value="f19" selected>Fall 2019</option>
     <option value="s20">Spring 2020</option>
   </select>
 </form>
