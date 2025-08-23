@@ -11,17 +11,21 @@ I am a master's student in computer science at Stanford University, specializing
 
 [general interest in studying software, with a special emphasis on compiler systems, using tools from logic, homotopical algebra, and category theory; motivations, career goals]
 
-Academic interests
+Academic Interests
 ======
-[specific interests: anything categorical, algebraic topology, homotopy theory, "abstract nonsense"; PL theory and functional programming; formal methods, SMT, automated proofs and formal verification; compiler optimizations, LLVM; neurosymbolic AI]
+I have been studying categorical methods since my second year as an undergrad, after being introduced to homological algebra, and remain interested in studying anything with a category-theoretic flavor. I have also spent a good amount of time studying algebraic topology and homotopy theory; my [senior undergrad thesis](https://alkizar.github.io/project/graded_monoidal_categories) introduced a formal categorical framework for a reoccurring phenomenon in monoidal products found in stable homotopy theory.
 
-Background
-======
-[studied mathematics as an undergrad with a focus on algebraic topology and categorical methods]
+More recently, my studies have been focused on PL and functional programming. I have a general interest in formal methods, SMT, automated proofs, and formal verification. On the more applied side, I am passionate about compiler design (both frontend and backend), and the mathematics underlying parsing, semantic analysis, and code generation algorithms. I am also interested in compiler optimizations (their theory and implementation), and LLVM. In particular, I spend a lot of time thinking about ways to apply my theoretical background to optimization algorithms (see below). I have some background in security as well, and hope to spend more time studying compiler security and safety.
+
+I have a curiosity for neurosymbolic proof systems such as [DeepMind's AlphaGeometry](https://github.com/google-deepmind/alphageometry) and [LeanDojo's ReProver](https://github.com/lean-dojo/ReProver), and (unsuccessfully) attempted to implement my own model for verifying the commutativity of diagrams in category theory. Although the final product did not perform especially well, working on the model from scratch was a valuable learning experience and I walked away feeling much more comfortable working with tools for ML. I am a strong supporter of efforts towards aligning AI and building a strong ethical foundation for machine learning technologies, as they become increasingly integrated into day-to-day life.
 
 Current projects
 ------
 [formalizing data-flow analysis as a functorial construct; labs you're in]
+
+Coursework
+------
+
 
 Extracurricular miscellany
 ------
