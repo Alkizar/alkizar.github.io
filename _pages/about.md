@@ -1,11 +1,13 @@
 ---
 permalink: /
-title: "Understanding compilers through the lens of formal methods"
+title: "Category Theory, Compilers, and Formal Methods"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+I am a master's student in computer science at Stanford University, specializing in software theory. I completed my bachelor's in mathematics at UC Berkeley in 2023. I am broadly interested in compiler systems and programming language theory, with an emphasis on applying tools from logic, homotopical algebra, and category theory. After completing my graduate studies, I hope to pursue a career in compiler engineering or applied formal methods.
 
 [general interest in studying software, with a special emphasis on compiler systems, using tools from logic, homotopical algebra, and category theory; motivations, career goals]
 
