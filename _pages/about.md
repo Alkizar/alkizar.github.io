@@ -13,7 +13,7 @@ I am a master's student in computer science at Stanford University, specializing
 
 Academic Interests
 ======
-I have been studying categorical methods since my second year as an undergrad, after being introduced to homological algebra, and remain interested in studying anything with a category-theoretic flavor. I have also spent a good amount of time studying algebraic topology and homotopy theory; my [senior undergrad thesis](https://alkizar.github.io/project/graded_monoidal_categories) introduced a formal categorical framework for a reoccurring phenomenon in monoidal products found in stable homotopy theory.
+I have been studying categorical methods since my second year as an undergrad, after being introduced to homological algebra, and remain interested in studying anything with a category-theoretic flavor. I have also spent a good amount of time studying algebraic topology and homotopy theory; my [senior undergrad thesis](https://alkizar.github.io/project/graded_monoidal_categories) introduced a formal categorical framework for a reoccurring phenomenon in [smash products](https://ncatlab.org/nlab/show/smash+product+of+spectra) found in stable homotopy theory.
 
 More recently, my studies have been focused on PL and functional programming. I have a general interest in formal methods, SMT, automated proofs, and formal verification. On the more applied side, I am passionate about compiler design (both frontend and backend), and the mathematics underlying parsing, semantic analysis, and code generation algorithms. I am also interested in compiler optimizations (their theory and implementation), and LLVM. In particular, I spend a lot of time thinking about ways to apply my theoretical background to optimization algorithms (see below). I have some background in security as well, and hope to spend more time studying compiler security and safety.
 
@@ -21,7 +21,11 @@ I have a curiosity for neurosymbolic proof systems such as [DeepMind's AlphaGeom
 
 Current projects
 ------
-[formalizing data-flow analysis as a functorial construct; labs you're in]
+Currently I spend a lot of time thinking about the Morphic compiler, and I'm working on trying to generalize the compiler's Lambda Set Specialization algorithm. I am hoping to extend LSS to the dependently-typed setting, and enable greater precision in the compiler's inference of certain type constraints for better code generation.
+
+In my spare time, I've begun writing a compiler in Rust for a functional programming language of my own design. This is mostly to practice working with Rust, but I also plan to use this as an opportunity to get my hands dirty with using an LLVM backend. I am also porting over to Rust a command-line tool I originally wrote in Python with a friend in 2024, for computing statistics on decklists scraped from online Magic the Gathering tournaments. I used this tool last year to study the metagame leading up to the Pioneer Regional Championship in DC, and hope to do the same this year to prepare for the RC in Las Vegas (ideally with a much cleaner and more efficient codebase this time).
+
+Lastly, I am working on reformulating data flow analysis as a functorial construct, to capture the duality of direction and compositionality (see partial redundancy elimination) of the data flow algorithm. I've had to put this idea on hold for the time being, to focus on my classes and other projects.
 
 Coursework
 ------
