@@ -1,0 +1,63 @@
+!<Stanford University>
+  *[Summer 2025]
+    (CS 109) Introduction to Probability
+    (CS 107) Computer Organization and Systems
+  *[Spring 2025]
+    (CS 233) Geometric and Topological Data Analysis
+    (CS 155) Computer and Network Security
+    (CS 143) Compilers
+  *[Winter 2025]
+    (CS 243) Program Analysis and Optimizations
+    (CS 229) Machine Learning
+  *[Fall 2024]
+    (CS 242) Programming Languages
+    (CS 161) Design and Analysis of Algorithms
+    (CS 154) Introduction to the Theory of Computation
+!<San Fransisco State University>
+  *[Spring 2024]
+    (CS 747) Introduction to Quantum Computing
+    (CS 415) Operating System Principles
+    (CS 413) Software Development
+!<UC Berkeley>
+  *[Spring 2023]
+    (MATH 253) Homological Algebra
+    (MATH 199) Independent Study (Teaching [MUSA 174](https://alkizar.github.io/teaching/musa174))
+    (MATH 196) Honors Thesis
+    (COGSCI 131) Computational Models of Cognition
+  *[Fall 2022]
+    (MATH 256A) Algebraic Geometry
+    (CS 61B) Data Structures
+  *[Spring 2022]
+    (MATH 215B) Homotopy Theory
+    (MATH 199) Independent Study (Teaching [MUSA 174](https://alkizar.github.io/teaching/musa174))
+    (MATH 199) Independent Study (Categorical Homotopy Theory)
+    (MATH 136) Incompleteness and Undecidability
+  *[Fall 2021]
+    (MATH 215A) Algebraic Topology
+    (MATH 202A) Topology and Analysis
+    (MATH 125A) Mathematical Logic
+  *[Summer 2021]
+    (ISF 100D) Technology, Society, and Culture
+  *[Spring 2021]
+    (MATH 250B) Commutative Algebra
+    (MATH 199) Independent Study (Teaching [MUSA 74](https://alkizar.github.io/teaching/musa74))
+    (MATH 199) Independent Study (Homological Algebra)
+    (MATH 185) Complex Analysis
+    (MATH 160) History of Mathematics
+  *[Fall 2020]
+    (MATH 250A) Groups, Rings, and Fields
+    (MATH 142) Elementary Algebraic Topology
+    (MATH 116) Cryptography
+    (LINGUIS 5) Language and Linguistics
+  *[Summer 202]
+    (MATH 115) Introduction to Number Theory
+  *[Spring 2020]
+    (MATH H113) (Honors) Introduction to Abstract Algebra
+    (MATH 110) Linear Algebra
+    (STAT 33B) Introduction to Advanced Programming in R
+    (PHILOS 5) Science and Human Understanding
+  *[Fall 2019]
+    (MATH H104) (Honors) Introduction to Analysis
+    (CS 61A) Structure and Interpretation of Computer Programs
+    (MUSA 74) Introduction to Proofs
+    (ASTRON C10) General Astronomy

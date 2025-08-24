@@ -60,6 +60,12 @@ def parse_content(s):
   func += '\n  document.getElementById(\'content\' + selectedValue).style.display = \'block\';\n};\n</script>\n'
   return content, select, func
 
+def parse_source(path):
+  with open(path, 'r') as file:
+    s = file.read()
+    output = parse_content(s)
+  return output
+
 """
 <script>
 document.getElementById('term').onchange = function() {
@@ -83,6 +89,9 @@ S = """
     (MATH 110) Linear Algebra
     (STAT 33B) Introduction to Advanced Programming in R
     (PHILOS 5) Science and Human Understanding
+!<Stanford>
+  *[Test]
+    (TEST 1) test test
 """
 
 if __name__ == '__main__':
@@ -91,7 +100,7 @@ if __name__ == '__main__':
   #print(parse_uni('<UC Berkeley>\n*[Fall 2019]\n(MATH H104) Intro to Anal\n(CS 1) a class\n*[Spring 2020]\n(MATH 113) Abstract Alg\n(CS 2) A Computer'))
   #l = [[1, 2], [3, 4, 5]]
   #print(reduce(lambda x, y: x + y, [l[i] for i in [0, 1]], []))
-  content, select, func = parse_content(S)
+  content, select, func = parse_source('courses.txt') #parse_content(S)
   print(select)
   print(content)
   print(func)
