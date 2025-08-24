@@ -40,6 +40,28 @@ Coursework
 
 <iframe id="dynamicIframe" src="" width="800" height="600"></iframe>
 
+----
+
+<label for='terms'>Academic Term</label>
+<select name="terms" id='terms' onchange="updateIframe()">
+  <option value="f19" selected>Fall 2019</option>
+  <option value="s20">Spring 2020</option>
+</select>
+
+<div id="content1" style="display: block;">Content for Option 1</div>
+<div id="content2" style="display: none;">Content for Option 2</div>
+
+<script>
+document.getElementById('terms').onchange = function() {
+  var selectedValue = this.value;
+  // Hide all content divs
+  document.getElementById('content1').style.display = 'none';
+  document.getElementById('content2').style.display = 'none';
+  document.getElementById('content3').style.display = 'none';
+  // Show the selected content div
+  document.getElementById('content' + selectedValue.slice(-1)).style.display = 'block';
+</script>
+
 
 Extracurricular miscellany
 ------
