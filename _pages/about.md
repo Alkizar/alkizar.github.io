@@ -38,8 +38,13 @@ Coursework
 
 <div id='contentf19' style="display: block;">
   <strong> Fall 2019 </strong>
+  <br>
   <i> UC Berkeley </i> 
   <ul>
+    <li id="wrapper" class="small-line"><p class="align-left">MATH H104</p><p class="align-center">(Honors) Introduction to Analysis</p></li><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><p class="align-left">CS 61A</p><p class="align-center">Structure and Interpretation of Computer Programs</p></li><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><p class="align-left">MUSA 74</p><p class="align-center">Introduction to Proofs</p></li><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><p class="align-left">ASTRON C10</p><p class="align-center">General Astronomy</p></li><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li>MATH H104 - (Honors) Introduction to Analysis</li>
     <li>CS 61A - Structure and Interpretation of Computer Programs</li>
     <li>MUSA 74 - Introduction to Proofs</li>
@@ -47,6 +52,22 @@ Coursework
   </ul>
 </div>
 <div id='contents20' style="display: none;">Content for Option 2</div>
+
+<style>
+p.align-left {
+    text-align:left;
+    padding:0;
+    margin:-0;
+    position:absolute;
+}
+p.align-center{
+  text-align: left;
+  margin-left: 95px;
+}
+div.small-line{
+  line-height: 0.5;
+}
+</style>
 
 <script>
 document.getElementById('term').onchange = function() {
