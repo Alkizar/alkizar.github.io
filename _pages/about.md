@@ -30,11 +30,12 @@ Coursework
 
 <label for='term'>Academic Term</label>
 <select id='term' style="display: block;">
-  <option value="f19" selected>Fall 2019</option>
+  <option value="" disabled selected>Academic Term</option>
   <option value="s20">Spring 2020</option>
+  <option value="f19">Fall 2019</option>
 </select>
 
-<div id='contentf19' style="display: block;">
+<div id='contentf19' style="display: none;">
   <strong> Fall 2019 </strong>
   <br>
   <i> UC Berkeley </i> 
