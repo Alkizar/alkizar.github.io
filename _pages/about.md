@@ -61,6 +61,7 @@ document.getElementById('term').onchange = function() {
 
   // Show the selected content div
   document.getElementById('content' + selectedValue.slice(-1)).style.display = 'block';
+}
 </script>
 
 
