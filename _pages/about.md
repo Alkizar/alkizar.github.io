@@ -60,7 +60,7 @@ document.getElementById('term').onchange = function() {
   document.getElementById('contents20').style.display = 'none';
 
   // Show the selected content div
-  document.getElementById('content' + selectedValue.slice(-1)).style.display = 'block';
+  document.getElementById('content' + selectedValue).style.display = 'block';
 };
 </script>
 
