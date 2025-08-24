@@ -66,41 +66,8 @@ def parse_source(path):
     output = parse_content(s)
   return output
 
-"""
-<script>
-document.getElementById('term').onchange = function() {
-  var selectedValue = this.value;
-  document.getElementById('contentf19').style.display = 'none';
-  document.getElementById('contents20').style.display = 'none';
-  document.getElementById('content' + selectedValue).style.display = 'block';
-};
-</script>
-"""
-
-S = """
-!<UC Berkeley>
-  *[Fall 2019]
-    (MATH H104) (Honors) Introduction to Analysis
-    (CS 61A) Structure and Interpretation of Computer Programs
-    (MUSA 74) Introduction to Proofs
-    (ASTRON C10) General Astronomy
-  *[Spring 2020]
-    (MATH H113) (Honors) Introduction to Abstract Algebra
-    (MATH 110) Linear Algebra
-    (STAT 33B) Introduction to Advanced Programming in R
-    (PHILOS 5) Science and Human Understanding
-!<Stanford>
-  *[Test]
-    (TEST 1) test test
-"""
-
 if __name__ == '__main__':
-  #with open(path, 'r') as file:
-  #  s = file.read()
-  #print(parse_uni('<UC Berkeley>\n*[Fall 2019]\n(MATH H104) Intro to Anal\n(CS 1) a class\n*[Spring 2020]\n(MATH 113) Abstract Alg\n(CS 2) A Computer'))
-  #l = [[1, 2], [3, 4, 5]]
-  #print(reduce(lambda x, y: x + y, [l[i] for i in [0, 1]], []))
-  content, select, func = parse_source('courses.txt') #parse_content(S)
+  content, select, func = parse_source('courses.txt')
   print(select)
   print(content)
   print(func)
