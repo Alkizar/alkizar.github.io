@@ -9,13 +9,11 @@ redirect_from:
 
 I am a master's student in computer science at Stanford University, specializing in software theory. I completed my bachelor's in mathematics at UC Berkeley in 2023. I am broadly interested in compiler systems and programming language theory, with an emphasis on applying tools from logic, homotopical algebra, and category theory. After completing my graduate studies, I hope to pursue a career in compiler engineering or applied formal methods.
 
-[general interest in studying software, with a special emphasis on compiler systems, using tools from logic, homotopical algebra, and category theory; motivations, career goals]
-
 Academic Interests
 ======
 I have been studying categorical methods since my second year as an undergrad, after being introduced to homological algebra, and remain interested in studying anything with a category-theoretic flavor. I have also spent a good amount of time studying algebraic topology and homotopy theory; my [senior undergrad thesis](https://alkizar.github.io/project/graded_monoidal_categories) introduced a formal categorical framework for a reoccurring phenomenon in [smash products](https://ncatlab.org/nlab/show/smash+product+of+spectra) found in stable homotopy theory.
 
-More recently, my studies have been focused on PL and functional programming. I have a general interest in formal methods, SMT, automated proofs, and formal verification. On the more applied side, I am passionate about compiler design (both frontend and backend), and the mathematics underlying parsing, semantic analysis, and code generation algorithms. I am also interested in compiler optimizations (their theory and implementation), and LLVM. In particular, I spend a lot of time thinking about ways to apply my theoretical background to optimization algorithms (see below). I have some background in security as well, and hope to spend more time studying compiler security and safety.
+More recently, my studies have been focused on PL and functional programming. I have a general interest in formal methods, SMT, automated proofs, and formal verification. [TODO -- say a little more about generating rigorous, safe, verified software for deployment, and the need to prove safety] On the more applied side, I am passionate about compiler design (both frontend and backend), and the mathematics underlying parsing, semantic analysis, and code generation algorithms. I am also interested in compiler optimizations (their theory and implementation), and LLVM. In particular, I spend a lot of time thinking about ways to apply my theoretical background to optimization algorithms (see below). I have some background in security as well, and hope to spend more time studying compiler security and safety.
 
 I have a curiosity for neurosymbolic proof systems such as [DeepMind's AlphaGeometry](https://github.com/google-deepmind/alphageometry) and [LeanDojo's ReProver](https://github.com/lean-dojo/ReProver), and (unsuccessfully) attempted to implement my own model for verifying the commutativity of diagrams in category theory. Although the final product did not perform especially well, working on the model from scratch was a valuable learning experience and I walked away feeling much more comfortable working with tools for ML. I am a strong supporter of efforts towards aligning AI and building a strong ethical foundation for machine learning technologies, as they become increasingly integrated into day-to-day life.
 
@@ -41,10 +39,10 @@ Coursework
   <br>
   <i> UC Berkeley </i> 
   <ul>
-    <li id="wrapper" class="small-line"><p class="align-left">MATH H104</p><p class="align-center">(Honors) Introduction to Analysis</p></li><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-    <li id="wrapper" class="small-line"><p class="align-left">CS 61A</p><p class="align-center">Structure and Interpretation of Computer Programs</p></li><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-    <li id="wrapper" class="small-line"><p class="align-left">MUSA 74</p><p class="align-center">Introduction to Proofs</p></li><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-    <li id="wrapper" class="small-line"><p class="align-left">ASTRON C10</p><p class="align-center">General Astronomy</p></li><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><div class="align-left">MATH H104</div><div class="align-center">(Honors) Introduction to Analysis</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><p class="align-left">CS 61A</div><div class="align-center">Structure and Interpretation of Computer Programs</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><div class="align-left">MUSA 74</div><div class="align-center">Introduction to Proofs</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><div class="align-left">ASTRON C10</div><div class="align-center">General Astronomy</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li>MATH H104 - (Honors) Introduction to Analysis</li>
     <li>CS 61A - Structure and Interpretation of Computer Programs</li>
     <li>MUSA 74 - Introduction to Proofs</li>
@@ -54,19 +52,19 @@ Coursework
 <div id='contents20' style="display: none;">Content for Option 2</div>
 
 <style>
-p.align-left {
-    text-align:left;
-    padding:0;
-    margin:-0;
-    position:absolute;
-}
-p.align-center{
-  text-align: left;
-  margin-left: 140px;
-}
-div.small-line{
-  line-height: 0.2;
-}
+  div.align-left {
+      text-align:left;
+      padding:0;
+      margin:-0;
+      position:absolute;
+  }
+  div.align-center{
+    text-align: left;
+    margin-left: 140px;
+  }
+  div.small-line{
+    line-height: 0.5;
+  }
 </style>
 
 <script>
