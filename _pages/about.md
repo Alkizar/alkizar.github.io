@@ -48,7 +48,7 @@ Coursework
   <option value="s20">Spring 2020</option>
 </select>
 
-<div id='contentf19' style="display: block;">Content for Option 1</div>
+<div id='contentf19' style="display: block;">Content for Option 1 <h1> BLAH </h1> <p> test test test</p></div>
 <div id='contents20' style="display: none;">Content for Option 2</div>
 
 <script>
