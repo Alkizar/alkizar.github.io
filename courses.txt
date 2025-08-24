@@ -21,7 +21,7 @@
 !<UC Berkeley>
   *[Spring 2023]
     (MATH 253) Homological Algebra
-    (MATH 199) Independent Study (Teaching [MUSA 174](https://alkizar.github.io/teaching/musa174))
+    (MATH 199) Independent Study (Teaching <a href="https://alkizar.github.io/teaching/musa174">MUSA 174</a>)
     (MATH 196) Honors Thesis
     (COGSCI 131) Computational Models of Cognition
   *[Fall 2022]
@@ -29,7 +29,7 @@
     (CS 61B) Data Structures
   *[Spring 2022]
     (MATH 215B) Homotopy Theory
-    (MATH 199) Independent Study (Teaching [MUSA 174](https://alkizar.github.io/teaching/musa174))
+    (MATH 199) Independent Study (Teaching <a href="https://alkizar.github.io/teaching/musa174">MUSA 174</a>)
     (MATH 199) Independent Study (Categorical Homotopy Theory)
     (MATH 136) Incompleteness and Undecidability
   *[Fall 2021]
@@ -40,7 +40,7 @@
     (ISF 100D) Technology, Society, and Culture
   *[Spring 2021]
     (MATH 250B) Commutative Algebra
-    (MATH 199) Independent Study (Teaching [MUSA 74](https://alkizar.github.io/teaching/musa74))
+    (MATH 199) Independent Study (Teaching <a href="https://alkizar.github.io/teaching/musa74">MUSA 74</a>)
     (MATH 199) Independent Study (Homological Algebra)
     (MATH 185) Complex Analysis
     (MATH 160) History of Mathematics

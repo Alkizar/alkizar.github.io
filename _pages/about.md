@@ -107,7 +107,7 @@ Coursework
   <hr style="width:200px;text-align:left;margin-left:0">
 <ul>
 <li id="wrapper" class="small-line"><div class="align-left">MATH 253</div><div class="align-center">Homological Algebra</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
-    <li id="wrapper" class="small-line"><div class="align-left">MATH 199</div><div class="align-center">Independent Study (Teaching <a href="https://alkizar.github.io/teaching/musa174">MUSA 174)</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><div class="align-left">MATH 199</div><div class="align-center">Independent Study (Teaching <a href="https://alkizar.github.io/teaching/musa174">MUSA 174</a>)</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">MATH 196</div><div class="align-center">Honors Thesis</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">COGSCI 131</div><div class="align-center">Computational Models of Cognition</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
   </ul>
@@ -129,7 +129,7 @@ Coursework
   <hr style="width:200px;text-align:left;margin-left:0">
 <ul>
 <li id="wrapper" class="small-line"><div class="align-left">MATH 215B</div><div class="align-center">Homotopy Theory</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
-    <li id="wrapper" class="small-line"><div class="align-left">MATH 199</div><div class="align-center">Independent Study (Teaching <a href="https://alkizar.github.io/teaching/musa174">MUSA 174)</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><div class="align-left">MATH 199</div><div class="align-center">Independent Study (Teaching <a href="https://alkizar.github.io/teaching/musa174">MUSA 174</a>)</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">MATH 199</div><div class="align-center">Independent Study (Categorical Homotopy Theory)</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">MATH 136</div><div class="align-center">Incompleteness and Undecidability</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
   </ul>
@@ -161,7 +161,7 @@ Coursework
   <hr style="width:200px;text-align:left;margin-left:0">
 <ul>
 <li id="wrapper" class="small-line"><div class="align-left">MATH 250B</div><div class="align-center">Commutative Algebra</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
-    <li id="wrapper" class="small-line"><div class="align-left">MATH 199</div><div class="align-center">Independent Study (Teaching <a href="https://alkizar.github.io/teaching/74">MUSA 174)</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><div class="align-left">MATH 199</div><div class="align-center">Independent Study (Teaching <a href="https://alkizar.github.io/teaching/74">MUSA 74</a>)</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">MATH 199</div><div class="align-center">Independent Study (Homological Algebra)</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">MATH 185</div><div class="align-center">Complex Analysis</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">MATH 160</div><div class="align-center">History of Mathematics</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
