@@ -29,7 +29,7 @@ Coursework
 ------
 
 <label for='term'>Academic Term</label>
-<select id='term' style="display: block;">
+<select id='term' style="display: block; color: #cccccc">
   <option value="" disabled selected>Academic Term</option>
   <option value="s20">Spring 2020</option>
   <option value="f19">Fall 2019</option>
