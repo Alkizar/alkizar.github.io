@@ -48,16 +48,17 @@ Coursework
   <option value="s20">Spring 2020</option>
 </select>
 
-<div id="content1" style="display: block;">Content for Option 1</div>
-<div id="content2" style="display: none;">Content for Option 2</div>
+<div id="contentf19" style="display: block;">Content for Option 1</div>
+<div id="contents20" style="display: none;">Content for Option 2</div>
 
 <script>
 document.getElementById('terms').onchange = function() {
   var selectedValue = this.value;
+
   // Hide all content divs
-  document.getElementById('content1').style.display = 'none';
-  document.getElementById('content2').style.display = 'none';
-  document.getElementById('content3').style.display = 'none';
+  document.getElementById('contentf19').style.display = 'none';
+  document.getElementById('contents20').style.display = 'none';
+
   // Show the selected content div
   document.getElementById('content' + selectedValue.slice(-1)).style.display = 'block';
 </script>
