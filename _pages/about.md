@@ -30,25 +30,20 @@ Lastly, I am working on reformulating data flow analysis as a functorial constru
 Coursework
 ------
 
-<form id='coursework'>
-  <label for='terms'>Academic Term</label>
-  <select name="terms" id='terms' onchange="updateIframe()">
-    <option value="f19" selected>Fall 2019</option>
-    <option value="s20">Spring 2020</option>
-  </select>
-</form>
-
-<iframe id="dynamicIframe" src="" width="800" height="600"></iframe>
-
-----
-
 <label for='term'>Academic Term</label>
-<select id='term'>
+<select id='term' style="display: block;">
   <option value="f19" selected>Fall 2019</option>
   <option value="s20">Spring 2020</option>
 </select>
 
-<div id='contentf19' style="display: block;">Content for Option 1 <h1> BLAH </h1> <p> test test test</p></div>
+<div id='contentf19' style="display: block;">
+  <h4> Fall 2019 </h4>
+  <i> UC Berkeley </i> 
+  <p> 
+    test test test
+    TEST TEST
+  </p>
+</div>
 <div id='contents20' style="display: none;">Content for Option 2</div>
 
 <script>
