@@ -40,7 +40,7 @@ Coursework
   <i> UC Berkeley </i> 
   <ul>
     <li id="wrapper" class="small-line"><div class="align-left">MATH H104</div><div class="align-center">(Honors) Introduction to Analysis</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
-    <li id="wrapper" class="small-line"><p class="align-left">CS 61A</div><div class="align-center">Structure and Interpretation of Computer Programs</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><div class="align-left">CS 61A</div><div class="align-center">Structure and Interpretation of Computer Programs</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">MUSA 74</div><div class="align-center">Introduction to Proofs</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">ASTRON C10</div><div class="align-center">General Astronomy</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li>MATH H104 - (Honors) Introduction to Analysis</li>
