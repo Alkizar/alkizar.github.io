@@ -43,7 +43,7 @@ Coursework
   <option value="Summer_2021">Summer 2021</option>
   <option value="Spring_2021">Spring 2021</option>
   <option value="Fall_2020">Fall 2020</option>
-  <option value="Summer_202">Summer 202</option>
+  <option value="Summer_2020">Summer 2020</option>
   <option value="Spring_2020">Spring 2020</option>
   <option value="Fall_2019">Fall 2019</option>
 </select>
@@ -179,8 +179,8 @@ Coursework
     <li id="wrapper" class="small-line"><div class="align-left">LINGUIS 5</div><div class="align-center">Language and Linguistics</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
   </ul>
 </div>
-<div id='contentSummer_202' style="display: none;">
-  <strong>Summer 202</strong>
+<div id='contentSummer_2020' style="display: none;">
+  <strong>Summer 2020</strong>
   <br>
   <i>UC Berkeley</i>
   <hr style="width:200px;text-align:left;margin-left:0">
@@ -228,7 +228,7 @@ document.getElementById('term').onchange = function() {
   document.getElementById('contentSummer_2021').style.display = 'none';
   document.getElementById('contentSpring_2021').style.display = 'none';
   document.getElementById('contentFall_2020').style.display = 'none';
-  document.getElementById('contentSummer_202').style.display = 'none';
+  document.getElementById('contentSummer_2020').style.display = 'none';
   document.getElementById('contentSpring_2020').style.display = 'none';
   document.getElementById('contentFall_2019').style.display = 'none';
   document.getElementById('content' + selectedValue).style.display = 'block';

@@ -49,7 +49,7 @@
     (MATH 142) Elementary Algebraic Topology
     (MATH 116) Cryptography
     (LINGUIS 5) Language and Linguistics
-  *[Summer 202]
+  *[Summer 2020]
     (MATH 115) Introduction to Number Theory
   *[Spring 2020]
     (MATH H113) (Honors) Introduction to Abstract Algebra
