@@ -62,7 +62,7 @@ p.align-left {
 }
 p.align-center{
   text-align: left;
-  margin-left: 95px;
+  margin-left: 150px;
 }
 div.small-line{
   line-height: 0.5;
