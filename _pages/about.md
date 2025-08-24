@@ -62,10 +62,10 @@ p.align-left {
 }
 p.align-center{
   text-align: left;
-  margin-left: 150px;
+  margin-left: 140px;
 }
 div.small-line{
-  line-height: 0.5;
+  line-height: 0.2;
 }
 </style>
 
