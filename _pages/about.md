@@ -31,34 +31,42 @@ Coursework
 <label for='term'>Academic Term</label>
 <select id='term' style="display: block; color: #000000">
   <option value="" disabled selected>Academic Term</option>
-  <option value="s20">Spring 2020</option>
-  <option value="f19">Fall 2019</option>
+  <option value="Fall_2019">Fall_2019</option>
+  <option value="Spring_2020">Spring_2020</option>
 </select>
-
-<div id='contentf19' style="display: none;">
-  <strong> Fall 2019 </strong>
+<div id='contentFall_2019' style="display: none;">
+  <strong>Fall 2019</strong>
   <br>
-  <i> UC Berkeley </i> 
+  <i>UC Berkeley</i>
   <hr style="width:200px;text-align:left;margin-left:0">
-  <ul>
-    <li id="wrapper" class="small-line"><div class="align-left">MATH H104</div><div class="align-center">(Honors) Introduction to Analysis</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+<ul>
+<li id="wrapper" class="small-line"><div class="align-left">MATH H104</div><div class="align-center">(Honors) Introduction to Analysis</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">CS 61A</div><div class="align-center">Structure and Interpretation of Computer Programs</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">MUSA 74</div><div class="align-center">Introduction to Proofs</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">ASTRON C10</div><div class="align-center">General Astronomy</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
   </ul>
 </div>
-<div id='contents20' style="display: none;">
-  <strong> Spring 2020 </strong>
+<div id='contentSpring_2020' style="display: none;">
+  <strong>Spring 2020</strong>
   <br>
-  <i> UC Berkeley </i> 
+  <i>UC Berkeley</i>
   <hr style="width:200px;text-align:left;margin-left:0">
-  <ul>
-    <li id="wrapper" class="small-line"><div class="align-left">MATH H113</div><div class="align-center">(Honors) Introduction to Abstract Algebra</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+<ul>
+<li id="wrapper" class="small-line"><div class="align-left">MATH H113</div><div class="align-center">(Honors) Introduction to Abstract Algebra</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">MATH 110</div><div class="align-center">Linear Algebra</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">STAT 33B</div><div class="align-center">Introduction to Advanced Programming in R</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">PHILOS 5</div><div class="align-center">Science and Human Understanding</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
   </ul>
 </div>
+<script>
+document.getElementById('term').onchange = function() {
+  var selectedValue = this.value;
+
+  document.getElementById('contentFall_2019'.style.display = 'none';
+  document.getElementById('contentSpring_2020'.style.display = 'none';
+  document.getElementById('content' + selectedValue).style.display = 'block';
+};
+</script>
 
 <style>
   div.align-left {
@@ -75,15 +83,6 @@ Coursework
     line-height: 0.5;
   }
 </style>
-
-<script>
-document.getElementById('term').onchange = function() {
-  var selectedValue = this.value;
-  document.getElementById('contentf19').style.display = 'none';
-  document.getElementById('contents20').style.display = 'none';
-  document.getElementById('content' + selectedValue).style.display = 'block';
-};
-</script>
 
 
 Extracurricular miscellany
