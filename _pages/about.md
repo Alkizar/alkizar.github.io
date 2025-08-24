@@ -37,12 +37,14 @@ Coursework
 </select>
 
 <div id='contentf19' style="display: block;">
-  <h4> Fall 2019 </h4>
+  <strong> Fall 2019 </strong>
   <i> UC Berkeley </i> 
-  <p> 
-    test test test
-    TEST TEST
-  </p>
+  <ul>
+    <li>MATH H104 - (Honors) Introduction to Analysis</li>
+    <li>CS 61A - Structure and Interpretation of Computer Programs</li>
+    <li>MUSA 74 - Introduction to Proofs</li>
+    <li>ASTRON C10 - General Astronomy</li>
+  </ul>
 </div>
 <div id='contents20' style="display: none;">Content for Option 2</div>
 
