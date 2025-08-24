@@ -1,5 +1,8 @@
 from functools import reduce
 
+def correct_term(t):
+  return t.replace(' ', '_')
+
 def parse_course_line(s):
   # (DEPT NUM) TITLE
   start_code = s.index('(')
@@ -20,9 +23,8 @@ def parse_term(s, uni):
   start_term = s.index('[')
   end_term = s.index(']')
   term = s[start_term + 1 : end_term].strip(' ')
-  corrected_term = term.replace(' ', '_')
   courses = s[end_term + 2 :]
-  return '<div id=\'content' + corrected_term + '\' style="display: none;">\n  <strong>' + term + '</strong>\n  <br>\n  <i>' + uni + '</i>\n  <hr style="width:200px;text-align:left;margin-left:0">\n<ul>\n' + parse_course_list(courses) + '\n  </ul>\n</div>', corrected_term
+  return '<div id=\'content' + correct_term(term) + '\' style="display: none;">\n  <strong>' + term + '</strong>\n  <br>\n  <i>' + uni + '</i>\n  <hr style="width:200px;text-align:left;margin-left:0">\n<ul>\n' + parse_course_list(courses) + '\n  </ul>\n</div>', term
 
 def parse_terms(s, uni):
   # *TERM\n*TERM\n...
@@ -50,11 +52,11 @@ def parse_content(s):
   labels = reduce(lambda x, y : x + y, [u[1] for u in parsed_unis], [])
   select = '<label for=\'term\'>Academic Term</label>\n<select id=\'term\' style="display: block; color: #000000">\n  <option value="" disabled selected>Academic Term</option>'
   for label in labels:
-    select += '\n  <option value="' + label + '">' + label + '</option>'
+    select += '\n  <option value="' + correct_term(label) + '">' + label + '</option>'
   select += '\n</select>'
   func = '<script>\ndocument.getElementById(\'term\').onchange = function() {\n  var selectedValue = this.value;\n'
   for label in labels:
-    func += '\n  document.getElementById(\'content' + label + '\'.style.display = \'none\';'
+    func += '\n  document.getElementById(\'content' + correct_term(label) + '\').style.display = \'none\';'
   func += '\n  document.getElementById(\'content\' + selectedValue).style.display = \'block\';\n};\n</script>\n'
   return content, select, func
 

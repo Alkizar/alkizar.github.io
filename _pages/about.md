@@ -31,8 +31,8 @@ Coursework
 <label for='term'>Academic Term</label>
 <select id='term' style="display: block; color: #000000">
   <option value="" disabled selected>Academic Term</option>
-  <option value="Fall_2019">Fall_2019</option>
-  <option value="Spring_2020">Spring_2020</option>
+  <option value="Fall_2019">Fall 2019</option>
+  <option value="Spring_2020">Spring 2020</option>
 </select>
 <div id='contentFall_2019' style="display: none;">
   <strong>Fall 2019</strong>
@@ -62,8 +62,8 @@ Coursework
 document.getElementById('term').onchange = function() {
   var selectedValue = this.value;
 
-  document.getElementById('contentFall_2019'.style.display = 'none';
-  document.getElementById('contentSpring_2020'.style.display = 'none';
+  document.getElementById('contentFall_2019').style.display = 'none';
+  document.getElementById('contentSpring_2020').style.display = 'none';
   document.getElementById('content' + selectedValue).style.display = 'block';
 };
 </script>
