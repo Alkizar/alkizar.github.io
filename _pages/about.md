@@ -48,8 +48,8 @@ Coursework
   <option value="s20">Spring 2020</option>
 </select>
 
-<div id="contentf19" style="display: block;">Content for Option 1</div>
-<div id="contents20" style="display: none;">Content for Option 2</div>
+<div id='contentf19' style="display: block;">Content for Option 1</div>
+<div id='contents20' style="display: none;">Content for Option 2</div>
 
 <script>
 document.getElementById('term').onchange = function() {
