@@ -42,8 +42,8 @@ Coursework
 
 ----
 
-<label for='terms'>Academic Term</label>
-<select name="terms" id='terms' onchange="updateIframe()">
+<label for='term'>Academic Term</label>
+<select id='term'>
   <option value="f19" selected>Fall 2019</option>
   <option value="s20">Spring 2020</option>
 </select>
@@ -52,7 +52,7 @@ Coursework
 <div id="contents20" style="display: none;">Content for Option 2</div>
 
 <script>
-document.getElementById('terms').onchange = function() {
+document.getElementById('term').onchange = function() {
   var selectedValue = this.value;
 
   // Hide all content divs
