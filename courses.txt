@@ -1,4 +1,12 @@
 !<Stanford University>
+  *[Winter 2026]
+    (CS 255) Cryptography
+    (CS 257) Introduction to Automated Reasoning
+    (CS 343D) Domain-Specific Compilers
+  *[Fall 2025]
+    (CS 149) Parallel Computing
+    (CS 157) Computational Logic
+    (CS 221) Artificial Intelligence
   *[Summer 2025]
     (CS 109) Introduction to Probability
     (CS 107) Computer Organization and Systems

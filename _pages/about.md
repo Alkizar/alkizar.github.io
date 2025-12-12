@@ -31,6 +31,8 @@ Coursework
 <label for='term'>Academic Term</label>
 <select id='term' style="display: block; color: #000000">
   <option value="" disabled selected>Academic Term</option>
+  <option value="Winter_2026">Winter 2026</option>
+  <option value="Fall_2025">Fall 2025</option>
   <option value="Summer_2025">Summer 2025</option>
   <option value="Spring_2025">Spring 2025</option>
   <option value="Winter_2025">Winter 2025</option>
@@ -47,6 +49,28 @@ Coursework
   <option value="Spring_2020">Spring 2020</option>
   <option value="Fall_2019">Fall 2019</option>
 </select>
+<div id='contentWinter_2026' style="display: none;">
+  <strong>Winter 2026</strong>
+  <br>
+  <i>Stanford University</i>
+  <hr style="width:200px;text-align:left;margin-left:0">
+<ul>
+<li id="wrapper" class="small-line"><div class="align-left">CS 255</div><div class="align-center">Cryptography</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><div class="align-left">CS 257</div><div class="align-center">Introduction to Automated Reasoning</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><div class="align-left">CS 343D</div><div class="align-center">Domain-Specific Compilers</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+  </ul>
+</div>
+<div id='contentFall_2025' style="display: none;">
+  <strong>Fall 2025</strong>
+  <br>
+  <i>Stanford University</i>
+  <hr style="width:200px;text-align:left;margin-left:0">
+<ul>
+<li id="wrapper" class="small-line"><div class="align-left">CS 149</div><div class="align-center">Parallel Computing</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><div class="align-left">CS 157</div><div class="align-center">Computational Logic</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><div class="align-left">CS 221</div><div class="align-center">Artificial Intelligence</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+  </ul>
+</div>
 <div id='contentSummer_2025' style="display: none;">
   <strong>Summer 2025</strong>
   <br>
@@ -216,6 +240,8 @@ Coursework
 document.getElementById('term').onchange = function() {
   var selectedValue = this.value;
 
+  document.getElementById('contentWinter_2026').style.display = 'none';
+  document.getElementById('contentFall_2025').style.display = 'none';
   document.getElementById('contentSummer_2025').style.display = 'none';
   document.getElementById('contentSpring_2025').style.display = 'none';
   document.getElementById('contentWinter_2025').style.display = 'none';
