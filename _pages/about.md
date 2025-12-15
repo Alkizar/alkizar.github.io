@@ -55,9 +55,9 @@ Coursework
   <i>Stanford University</i>
   <hr style="width:200px;text-align:left;margin-left:0">
 <ul>
-<li id="wrapper" class="small-line"><div class="align-left">CS 255</div><div class="align-center">Cryptography</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
-    <li id="wrapper" class="small-line"><div class="align-left">CS 257</div><div class="align-center">Introduction to Automated Reasoning</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">CS 343D</div><div class="align-center">Domain-Specific Compilers</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><div class="align-left">CS 257</div><div class="align-center">Introduction to Automated Reasoning</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><div class="align-left">CS 255</div><div class="align-center">Cryptography</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
   </ul>
 </div>
 <div id='contentFall_2025' style="display: none;">
@@ -66,9 +66,9 @@ Coursework
   <i>Stanford University</i>
   <hr style="width:200px;text-align:left;margin-left:0">
 <ul>
-<li id="wrapper" class="small-line"><div class="align-left">CS 149</div><div class="align-center">Parallel Computing</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
-    <li id="wrapper" class="small-line"><div class="align-left">CS 157</div><div class="align-center">Computational Logic</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
     <li id="wrapper" class="small-line"><div class="align-left">CS 221</div><div class="align-center">Artificial Intelligence</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><div class="align-left">CS 157</div><div class="align-center">Computational Logic</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
+    <li id="wrapper" class="small-line"><div class="align-left">CS 149</div><div class="align-center">Parallel Computing</div></li><style>div.align-left {text-align:left;padding:0;margin:0;position:absolute;}div.align-center{  text-align: center;  margin-left: -50px;}</style>
   </ul>
 </div>
 <div id='contentSummer_2025' style="display: none;">

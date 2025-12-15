@@ -44,58 +44,17 @@ Technical Skills
   * Python
   * Haskell
   * CUDA
-  * ===================
-
-  * <div id="wrapper" class="small-line"><p class="align-left">Python</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper" class="small-line"><p class="align-left">C++</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper" class="small-line"><p class="align-left">Java</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper" class="small-line"><p class="align-left">Haskell</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper" class="small-line"><p class="align-left">C</p><p class="align-center">▮▮▮▮▮</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper" class="small-line"><p class="align-left">Rust</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper" class="small-line"><p class="align-left">Javascript</p><p class="align-center">▮▮▯▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
 * Toolkits:
   * Yacc
   * Flex
-  * AWS Neuron
   * NumPY
   * PyTorch
   * SciPy
-  * ============
-  * <div id="wrapper" class="small-line"><p class="align-left">Yacc</p><p class="align-center">▮▮▮▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper" class="small-line"><p class="align-left">Flex</p><p class="align-center">▮▮▮▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper" class="small-line"><p class="align-left">PyTorch</p><p class="align-center">▮▮▮▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper" class="small-line"><p class="align-left">NumPy</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper" class="small-line"><p class="align-left">Qiskit</p><p class="align-center">▮▮▯▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper" class="small-line"><p class="align-left">SciPy</p><p class="align-center">▮▮▯▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
 * Other:
   * LaTeX
   * Agda
   * cvc5
-  * ===========
-  * <div id="wrapper" class="small-line"><p class="align-left">LaTeX</p><p class="align-center">▮▮▮▮▮</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper" class="small-line"><p class="align-left">Agda</p><p class="align-center">▮▮▮▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper" class="small-line"><p class="align-left">Git</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper" class="small-line"><p class="align-left">Linux</p><p class="align-center">▮▮▮▮▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper" class="small-line"><p class="align-left">HTML</p><p class="align-center">▮▮▯▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  * <div id="wrapper" class="small-line"><p class="align-left">cvc5</p><p class="align-center">▮▮▮▯▯</p></div><style>p.align-left {text-align:left;padding:0;margin:0;position:absolute;}p.align-center{  text-align: center;  margin-left: -50px;}</style>
-  <style>
-  p.align-left {
-      text-align:left;
-      padding:0;
-      margin:-0;
-      position:absolute;
-  }
-  
-  p.align-center{
-    text-align: left;
-    margin-left: 95px;
-  }
-
-  div.small-line{
-    line-height: 0.5;
-  }
-  </style>
-
+  * AWS Neuron
 
 Projects
 ======
