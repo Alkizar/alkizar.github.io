@@ -42,8 +42,8 @@ Technical Skills
   * C++
   * C
   * Python
+  * Java
   * Haskell
-  * CUDA
 * Toolkits:
   * Yacc
   * Flex
@@ -52,6 +52,7 @@ Technical Skills
   * SciPy
 * Other:
   * LaTeX
+  * CUDA
   * Agda
   * cvc5
   * AWS Neuron

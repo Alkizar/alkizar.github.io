@@ -8,9 +8,14 @@ date: 2022-01-01
 location: "Berkeley, CA"
 ---
 
-[Description of course; TODO -- the stuff below is way too pretentious, fix]
+An introduction to category theory, especially targeted towards advanced undergraduates transitioning into graduate-level coursework (which often references categorical concepts without covering them in much detail).
 
-Motivation
+Description
+======
+
+MUSA 174 was taught
+
+Background
 ======
 
 After completing my first few grad-level math courses at Berkeley, I began to see (what I believed to be) a fundamental problem in the role of category theory in mathematics pedagogy. Most undergraduate courses are very careful to avoid getting into the gritty details of category theory, at most name-dropping the term "functor" or describing a particular transformation as "natural" in a handwavy, informal context. On the other hand, many of my graduate classes tacitly assumed its students were already comfortable with the language of categories. It felt like a bridge was missing between these states [TODO]
