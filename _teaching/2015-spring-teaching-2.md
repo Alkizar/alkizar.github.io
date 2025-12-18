@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate Course"
 permalink: /teaching/musa174
 venue: "UC Berkeley, Mathematics"
-date: 2022-01-01, 2023-01-01
+date: 2022,2023-01-01
 location: "Berkeley, CA"
 ---
 
