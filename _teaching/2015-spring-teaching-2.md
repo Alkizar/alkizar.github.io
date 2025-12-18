@@ -13,7 +13,16 @@ An introduction to category theory, especially targeted towards advanced undergr
 Description
 ======
 
-MUSA 174 was taught
+MUSA 174 was taught using Prof. Emily Riehl's (excellent) <i>Category Theory in Context</i>, which I would emphatically recommend to anyone else looking for a good introduction to the subject. Both in Spring 2022 and Spring 2023 the course closely followed chapters 1 through 4, covering the following topics:
+* Categories (duality, functors, natural transformations)
+* Universal properties (representable functors, the Yoneda lemma)
+* Limits and colimits (universal cones, continuity, functoriality of limits)
+* Adjunctions (adjoint functors, units and counits, adjunction calculus)
+
+The final few weeks of each class was devoted to surveying a handful of special topics, which included:
+* Monads and algebras
+* Topoi and their logics
+* (∞,1)-categories
 
 Background
 ======
