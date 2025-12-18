@@ -39,8 +39,7 @@ Technical Skills
 ======
 * Languages:
   * Rust
-  * C++
-  * C
+  * C/C++
   * Python
   * Java
   * Haskell
