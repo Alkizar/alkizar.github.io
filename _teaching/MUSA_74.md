@@ -31,7 +31,7 @@ I took MUSA 74 during my first semester at UC Berkeley in Fall 2019, and first b
 Legacy
 ======
 
-MUSA 74 had been taught at Berkeley for years before me. Initially it was officially listed in the math department under the name MATH 74, hence the somewhat arbitrary course code when later offered as a <a href="https://iande.berkeley.edu/ie-courses/decals">DeCal</a> under MUSA's banner. Since my tenure as one of its instructors, the course has again been adopted by the math department as an official course taught in Fall semesters; during the Spring it is still taught by MUSA as a DeCal.
+MUSA 74 had been taught at Berkeley for years before me. Initially it was officially listed in the math department under the name Math 74, hence the somewhat arbitrary course code when later offered as a <a href="https://iande.berkeley.edu/ie-courses/decals">DeCal</a> under MUSA's banner. Since my tenure as one of its instructors, the course has again been adopted by the math department as an official course taught in Fall semesters; during the Spring it is still taught by MUSA as a DeCal.
 
 Syllabus
 ======
