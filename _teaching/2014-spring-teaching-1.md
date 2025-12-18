@@ -36,4 +36,4 @@ MUSA 74 had been taught at Berkeley for years before me. Initially it was offici
 Syllabus
 ======
 
-The course syllabus can be found <a href="https://decal-file-uploads.s3.amazonaws.com/uploads/attachments/000/005/444/original/MUSA74-Sp21-Syllabus.pdf">here</a>.
+The course syllabus can be found <a href="https://alkizar.github.io/files/MUSA_74_Syllabus.pdf">here</a>.

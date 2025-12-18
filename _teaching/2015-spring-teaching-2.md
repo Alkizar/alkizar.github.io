@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate Course"
 permalink: /teaching/musa174
 venue: "UC Berkeley, Mathematics"
-date: 2022,2023-01-01
+date: 2022-01-01
 location: "Berkeley, CA"
 ---
 
@@ -27,13 +27,15 @@ The final few weeks of each class was devoted to surveying a handful of special 
 Background
 ======
 
-After completing my first few grad-level math courses at Berkeley, I began to see (what I believed to be) a fundamental problem in the role of category theory in mathematics pedagogy. Most undergraduate courses are very careful to avoid getting into the gritty details of category theory, at most name-dropping the term "functor" or describing a particular transformation as "natural" in a handwavy, informal context. On the other hand, many of my graduate classes tacitly assumed its students were already comfortable with the language of categories. It felt like a bridge was missing between these states [TODO]
+I started this course for a few reasons: first, and probably most importantly, I fell for category theory's allure as soon as we met first at the bar, and teaching a class on the subject felt like a good way to test my understanding of the subject once I felt comfortable; and second, in my grad-level coursework I found that categorical maturity was often tacitly taken for granted, while the technical details would be swept under the rug. I found the latter especially unsatisfying, and figured I was not the only one who felt this way, so I set out to spread the good word of our lord and savior Saunders Mac Lane to future acolytes. The class ended up being way more popular than I had expected, and teaching it was some of the most fun I had during my undergrad career. There was enough demand after the pilot run in Spring 2022 that I was compelled to offer MUSA 174 again in Spring 2023.
+
+The name of the course, "MUSA 174", originates from its lower division analog <a href="https://alkizar.github.io/teaching/musa74">MUSA 74</a> (another class I've taught).
 
 Legacy
 ======
 
-It is my understanding that this course is still being taught at UC Berkeley, by my grand-alumni (alumni of my alumni, to whom I initially passed the torch). I am genuinely thrilled that this class has survived my graduation, and hope that other institutions begin offering similar courses in the future. While it would be fantastic to see the university officially incorporate the course into their mathematics curriculum, part of me believes that it is better left in the hands of the students. The subject is one which I believe thrives on a more seminar-style form of classroom participation, and I wouldn't want the class to lose the socratic liveliness that felt so important to its success when I first taught it.
+It is my understanding that this course is still being taught at UC Berkeley, by my grand-alumni (alumni of my alumni, to whom I initially passed the torch). I am genuinely thrilled that this class has survived my graduation, and hope that other institutions begin offering similar courses in the future. While it would be fantastic to see the university officially incorporate the course into their mathematics curriculum, part of me believes that it is better left in the hands of the students as a kind of informal seminar, without the burden of exams or the threat of final grades.
 
 Syllabus
 ======
-The course syllabus from Spring 2022 can be found here. TODO -- link syllabus (host locally ig?)
+The course syllabus from Spring 2023 can be found <a href="https://alkizar.github.io/files/MUSA_174_Syllabus.pdf">here</a>.
