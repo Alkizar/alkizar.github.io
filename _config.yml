@@ -27,9 +27,10 @@ author:
   pronouns         : "he/him" # example: "she/her"  
   bio              : "Master's student studying programming languages, compilers, and category theory."
   location         : "San Francisco Bay Area"
-  employer         : "Stanford University"
+  education        : "TEST TEST TEST"
+  employer         : "Topos Institute"
   uri              : #https://profiles.stanford.edu/bryce-goldman
-  email            : "brycegoldman@stanford.edu" 
+  email            : "bryceggoldman@gmail.com" 
 
   # Academic websites
   academia         : # URL
