@@ -20,30 +20,38 @@ Education
 
 Work experience
 ======
+* Summer 2026: Research Associate
+  * Topos Institute
+  * Developed a DSL for use in <a href="https://topos.institute/work/catcolab/">CatColab</a>'s categorical logic package, which facilitates the implementation of general modal double theories. [TODO]-link to repo once made public
+  * Supervisor: Evan Patterson
+
 * Summer 2024: Student Assistant
   * San Francisco State University
   * Duties included: Writing course notes (code and exposition) for mechanistic interpretability seminar
-  * Supervisor: Prof. Daniel Huang
+  * Advised by Prof. Daniel Huang
 
 * Fall 2023: Course Reader
   * UC Berkeley
   * Duties included: Grading student assignments for courses in mathematical logic, computability theory, and algebraic topology
-  * Supervisors: Prof. Antonio Montalban, Prof. John Lott
+  * Supervised by Prof. Antonio Montalban and Prof. John Lott
 
 * Summer 2022: Undergraduate Research Fellow
   * University of Chicago
   * Duties included: Conducting research in stable homotopy theory and category theory; see <a href="google.com">my senior thesis</a>
-  * Supervisor: Prof. J. Peter May
+  * Advised by Prof. J. Peter May
   
 Technical Skills
 ======
 * Languages:
   * Rust
   * C/C++
+  * Lean
+  * Haskell
+  * Agda
   * Python
   * Java
-  * Haskell
 * Toolkits:
+  * LLVM
   * Yacc
   * Flex
   * NumPY
@@ -52,7 +60,6 @@ Technical Skills
 * Other:
   * LaTeX
   * CUDA
-  * Agda
   * cvc5
   * AWS Neuron
 
