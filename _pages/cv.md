@@ -13,12 +13,12 @@ redirect_from:
 
 Education
 ======
-* M.S. in Computer Science, Stanford University, 2026 (expected)
+* M.S. in Computer Science, Stanford University, 2026
   * Relevant Coursework: Compilers, Program Analysis and Compiler Optimizations, Programming Languages
 * B.A. in Mathematics, UC Berkeley, 2023
   * Honors: Graduated with highest honors in mathematics and general scholarship, Recipient of the <a href="https://math.berkeley.edu/about/honors-awards/dorothea-klumpke-roberts-prize">Dorothea Klumpke Roberts prize</a>
 
-Work experience
+Work Experience
 ======
 * Summer 2026: Research Associate
   * Topos Institute
@@ -75,7 +75,7 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Service and Leadership
 ======
 * Former president of the <a href="https://math.berkeley.edu/~musa/">Mathematics Undergraduate Student Association</a> at UC Berkeley
 * Programming mentor for <a href="https://www.thebluealliance.com/team/4186">FIRST Robotics Competition team 4186</a>
