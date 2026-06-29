@@ -14,7 +14,7 @@ redirect_from:
 Education
 ======
 * M.S. in Computer Science, Stanford University, 2026
-  * Relevant Coursework: Compilers, Program Analysis and Compiler Optimizations, Programming Languages
+  * Relevant Coursework: Domain-Specific Languages, Program Analysis and Compiler Optimizations, Programming Languages, Automated Reasoning
 * B.A. in Mathematics, UC Berkeley, 2023
   * Honors: Graduated with highest honors in mathematics and general scholarship, Recipient of the <a href="https://math.berkeley.edu/about/honors-awards/dorothea-klumpke-roberts-prize">Dorothea Klumpke Roberts prize</a>
 
@@ -61,6 +61,7 @@ Technical Skills
   * LaTeX
   * CUDA
   * cvc5
+  * egglog
   * AWS Neuron
 
 Projects

@@ -10,30 +10,26 @@ redirect_from:
 I am a research software developer working in applied category theory, compilers, and formal methods. I completed my M.S. in computer science at Stanford University in 2026, and my B.A. in mathematics at UC Berkeley in 2023. I am broadly interested in applying tools from category theory to programming languages, type theory, automated reasoning, and computational logic. 
 
 Current Work
+======
+Theorae ⊆ CatColab
 ------
-- Theorae ⊆ CatColab
 
 I am currently working on CatColab's DoubleTT project at the Topos Institute in Berkeley, CA. This summer I am implementing Theorae (WIP title), a DSL for specifying modal double theories, in as much generality as the system will allow without becoming cumbersome for the user. 
 
-- Double Category Theory in Lean
+Double Category Theory in Lean
+------
 
 A project I began towards the end of my program at Stanford, and which I have continued working on in my spare time. My (optimistic) goal is to implement a library in Lean4 that encompasses all of the essential tools of (virtual) double category theory routinely used by applied category theorists. The ergonomics of this library are particularly important, and currently one of the main challenges to this project --- there is a great deal of friction between the multi-dimensionality of double categories and the desire to stay as far from dependent type hell as possible. At the moment I am working on navigating this tension in the core structures of the library, and hope to arrive at a compromise between a faithful encoding of the mathematical definitions and a Not Terrible To Use™ interface.
 
-- Type Set Specialization
+Type Set Specialization
+------
 
-Type set specialization (TSS) is an extension of the Lambda Set Specialization [TODO] algorithm for terms of arbitrary types which I spent some time collaborating with Ben Driscoll [TODO] on during my time at Stanford. The idea behind this generalization is a kind of extra-juiced constant propagation at the type level, to expose type-theoretic optimizations to the compiler. For instance, using TSS and inlining, we can reduce the program
-```
-def nonzero(x : Nat) → Bool = match x {
-zero ⇒ false
-suc( ) ⇒ true
-}
-let maybe = if nonzero(suc(nbad)) then good else bad
-```
-to simply
-```
-let maybe : Good + Bad = good
-```
-where one assumes that `nbad : Nat` is some runtime value that we would like to obscure from the compiler, and Bad is some type which we would like to avoid terms of in our program.
+Type set specialization is an extension of the Lambda Set Specialization (LSS) [TODO] algorithm for terms of arbitrary types which I spent some time collaborating with Ben Driscoll [TODO] on during my time at Stanford. The idea behind this generalization is a kind of extra-juiced constant propagation at the type level, to expose type-theoretic optimizations to the compiler using the same mechanism as LSS.
+
+
+[TODO]
+DELETE UNDER THIS
+======
 
 
 
