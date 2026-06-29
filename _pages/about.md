@@ -11,7 +11,6 @@ I am a research software developer working in applied category theory, compilers
 
 Current Work
 ======
----
 
 Theorae ⊆ CatColab
 ------
