@@ -22,9 +22,6 @@ main:
         
   - title: "Blog Posts"
     url: /year-archive/
-
-  - title: "Misc"
-    url: /misc/
     
   - title: "CV"
     url: /cv/
@@ -34,3 +31,6 @@ main:
     
   #- title: "Guide"
   #  url: /markdown/
+
+  - title: "Misc"
+    url: /misc/

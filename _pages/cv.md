@@ -80,4 +80,3 @@ Service and Leadership
 ======
 * Former president of the <a href="https://math.berkeley.edu/~musa/">Mathematics Undergraduate Student Association</a> at UC Berkeley
 * Programming mentor for <a href="https://www.thebluealliance.com/team/4186">FIRST Robotics Competition team 4186</a>
-* <a href="https://blogs.magicjudges.org/o/judge-levels/">Level 1 Judge</a> for Magic the Gathering™
