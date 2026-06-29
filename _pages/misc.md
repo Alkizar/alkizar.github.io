@@ -49,7 +49,52 @@ Young couple on BART<br>
 I would be grateful if you'd<br>
 stop fucking smoking
 
+Reading List
+------
 
+(Books are organized according to the system pioneered by Charles Dickens to classify his Christmas phantoms. Written bottom to top, so I guess that is also the intended order for consumption? Oops, sorry.)
+
+Future:
+
+* *Authority* (Jeff VanderMeer)
+
+* *Project Hail Mary* (Andy Weir) --- It says a lot about me that half of the books on this list were adapted as movies or shows that I watched before reading them. I will not be unpacking this further.
+
+* *House of Leaves* (Mark Z. Danielewski)
+
+* *The Algebraist* (Iain Banks)
+
+* *Foundation* (Isaac Asimov)
+
+Present:
+
+* *A Storm of Swords* (George R. R. Martin)
+
+Past:
+
+* *A Clash of Kings* (George R. R. Martin)
+
+* *A Game of Thrones* (George R. R. Martin) --- I resisted the temptation to read this series for a while, mostly because I am not sure I will survive the psychic damage of becoming invested and never being given closure in the form of a conclusion to the series. [TODO]
+
+* *Annihilation* (Jeff VanderMeer) --- Absolute banger. I've heard less good things about the sequels, but I plan to continue reading the series until I experience this dip in quality firsthand.
+
+* *Death's End* (Cixin Liu)
+
+* *The Dark Forest* (Cixin Liu)
+
+* *The Three Body Problem* (Cixin Liu) --- A consistent theme across the trilogy is that the book presents a number of interesting ideas, but the [TODO]
+
+* *Neuromancer* (William Gibson) --- I have a hard time with cyberpunk as a genre. I think my issue is with how hard it feels like it wants to be cool, and its awareness that it *is* cool, but suffering from a lack of self-(meta?)awareness about its desire to be cool and awareness that it is cool. It's like painting a flaming lightning bolt on the side of a sports car or something, like yes this is obviously rad as hell but almost by virtue of cool-by-construction, which feels unearned to me. Anyway book is solid, glad I read it, unlikely to return to it or the rest of the series it belongs to.
+
+* *The Freeze-Frame Revolution* (Peter Watts) --- Slightly different flavor than *Blindsight* and *Echopraxia* but still really good in my illiterate opinion. Less likely to reread, but I do not regret moving the content of this book from page to brain at least once. I also found this one easier to read (less technically dense?) than his other two books below, and it is really short (I want to say around 200 pages) so kind of free.
+
+* *Echopraxia* (Peter Watts) --- Didn't quite capture the magic of the *Blindsight*, but still a really great sidequel to the latter, and I am very likely to reread *Echopraxia* at some point in my future.
+
+* *Blindsight* (Peter Watts) --- Probably my favorite science fiction novel at this point. I think based on where I have placed this book in the loose chronology of things I've read the past few years this would have been my third(?) reading. Will read again with probability close to 1.
+
+* *Exhalation* (Ted Chiang) --- I found this anthology to be less engaging than its predecessor. Finishing "The Lifecycle of Software Objects" began to feel like a chore, and I really didn't feel like I gained anything as a reader from it dragging on as long as it did. A few interesting ideas were presented, but it fell short of asking some of the more uncomfortable questions that I felt like it had to be setting up. I don't know, maybe I am not sufficiently cozy-core for this particular story. The story "Exhalation" was good.
+
+* *Stories of Your Life and Others* (Ted Chiang) --- I enjoyed most of the short stories, especially "Division by Zero" and "Hell is the Absence of God". I felt that "Understand" was a little goofy by the end (which may have been the point) and I found it difficult to take the narrator seriously by the end of it.
 
 <!--
 [mtg, photography, D&D, lockpicking, public transit haikus, dumb discord bots]
