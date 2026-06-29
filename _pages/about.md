@@ -11,10 +11,12 @@ I am a research software developer working in applied category theory, compilers
 
 Current Work
 ======
+---
+
 Theorae ⊆ CatColab
 ------
 
-I am currently working on CatColab's DoubleTT project at the Topos Institute in Berkeley, CA. This summer I am implementing Theorae (WIP title), a DSL for specifying modal double theories, in as much generality as the system will allow without becoming cumbersome for the user. 
+I am currently working on <a href='https://topos.institute/work/catcolab/'>CatColab</a>'s DoubleTT project at the <a href='https://topos.institute/'>Topos Institute</a> in Berkeley, CA. This summer I am implementing Theorae (WIP title), a DSL for specifying modal double theories, in as much generality as the system will allow without becoming cumbersome for the user. 
 
 Double Category Theory in Lean
 ------
@@ -24,7 +26,7 @@ A project I began towards the end of my program at Stanford, and which I have co
 Type Set Specialization
 ------
 
-Type set specialization is an extension of the Lambda Set Specialization (LSS) [TODO] algorithm for terms of arbitrary types which I spent some time collaborating with Ben Driscoll [TODO] on during my time at Stanford. The idea behind this generalization is a kind of extra-juiced constant propagation at the type level, to expose type-theoretic optimizations to the compiler using the same mechanism as LSS.
+Type set specialization is an extension of the Lambda Set Specialization (LSS) algorithm for terms of arbitrary types which I spent some time collaborating with <a href='https://benjamindriscoll.com/'>Ben Driscoll</a> on during my time at Stanford. The idea behind this generalization is a kind of extra-juiced constant propagation at the type level, to expose type-theoretic optimizations to the compiler using the same mechanism as LSS.
 
 
 [TODO]
