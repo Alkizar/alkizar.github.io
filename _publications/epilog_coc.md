@@ -11,35 +11,34 @@ For my final project in Prof. Michael Genesereth's logic programming course at S
 
 Owing to my disdain for the user's experience (yes you, dear reader), the frontend is merely a primitive Javascript interface for the typechecker. The language's grammar can likely be deduced by any initiate of a Lean-like language, but I include a BNF description below for completion:
 
-```bnf
-<Declaration>     ::= Axiom | Def | Inductive | Struct
-<Axiom>           ::= axiom Name : Term
-<Def>             ::= def Name .{UniverseParams}? Param* : Term := Term
-<Inductive>       ::= inductive Name .{UniverseParams}? Param* : Term where Constructor+
-<Struct>          ::= struct Name .{UniverseParams}? Param* : Term where Field+
+```ebnf
+<Declaration>     ::= <Axiom> | <Def> | <Inductive> | <Struct>
+<Axiom>           ::= axiom <Name> : <Term>
+<Def>             ::= def <Name> .{<UniverseParams>}? <Param>* : <Term> := <Term>
+<Inductive>       ::= inductive <Name> .{<UniverseParams>}? <Param>* : <Term> where <Constructor>+
+<Struct>          ::= struct <Name> .{<UniverseParams>}? <Param>* : <Term> where <Param>+
 
-<UniverseParams>  ::= Name | Name, UniverseParams
-Param           ::= (Name : Term)
-Constructor     ::= "|" Param
-Field           ::= Param
+<UniverseParams>  ::= <Name> | <Name>, <UniverseParams>
+<Param>           ::= (<Name> : <Term>)
+<Constructor>     ::= "|" <Param>
 
-Term            ::= Term.Name 
-                 | match Term with Arm+ 
-                 | Term -> Term 
-                 | Term Term 
-                 | Name 
-                 | Sort Universe 
-                 | Type Nat 
-                 | Type 
-                 | Prop 
-                 | λ Param . Term
-                 | Π Param . Term 
-                 | (Term)
+<Term>            ::= <Term>.<Name> 
+                    | match <Term> with <Arm>+ 
+                    | <Term> -> <Term> 
+                    | <Term> <Term> 
+                    | <Name> 
+                    | Sort <Universe>
+                    | Type <Nat> 
+                    | Type 
+                    | Prop
+                    | λ <Param> . <Term>
+                    | Π <Param> . <Term>
+                    | (<Term>)
 
-Arm             ::= "|" Pattern => Term
-Pattern         ::= Name | _ | Name(Patterns)
-Patterns        ::= ε | Pattern | Pattern, Patterns
-Universe        ::= Nat | Name | max(Universe, Universe) | Universe + Nat | (Universe)
+<Arm>             ::= "|" <Pattern> => <Term>
+<Pattern>         ::= <Name> | _ | <Name>(<Patterns>)
+<Patterns>        ::= ε | <Pattern> | <Pattern>, <Patterns>
+<Universe>        ::= <Nat> | <Name> | max(<Universe>, <Universe>) | <Universe> + <Nat> | (<Universe>)
 ```
 
 (Type `\lam` or `\pi` followed by a space in the editor for the characters λ and Π, respectively.)

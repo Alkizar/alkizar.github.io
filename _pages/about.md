@@ -1,24 +1,48 @@
 ---
 permalink: /
-title: "Category Theory, Compilers, and Formal Methods"
+title: "Bryce Goldman"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am a master's student in computer science at Stanford University, specializing in software theory. I completed my bachelor's in mathematics at UC Berkeley in 2023. I am broadly interested in compiler systems and programming language theory, with an emphasis on applying tools from logic, homotopical algebra, and category theory. After completing my graduate studies, I hope to pursue a career in compiler engineering or applied formal methods.
+I am a research software developer working in applied category theory, compilers, and formal methods. I completed my M.S. in computer science at Stanford University in 2026, and my B.A. in mathematics at UC Berkeley in 2023. I am broadly interested in applying tools from category theory to programming languages, type theory, automated reasoning, and computational logic. 
 
-Academic Interests
-======
-I have been studying categorical methods since my second year as an undergrad, after being introduced to homological algebra, and remain interested in studying anything with a category-theoretic flavor. I have also spent a good amount of time studying algebraic topology and homotopy theory; my [senior undergrad thesis](https://alkizar.github.io/project/graded_monoidal_categories) introduced a formal categorical framework for a reoccurring phenomenon in [smash products](https://ncatlab.org/nlab/show/smash+product+of+spectra) found in stable homotopy theory.
-
-More recently, my studies have been focused on PL and functional programming. I have a general interest in formal methods, SMT, automated proofs, and formal verification. [TODO -- say a little more about generating rigorous, safe, verified software for deployment, and the need to prove safety] On the more applied side, I am passionate about compiler design (both frontend and backend), and the mathematics underlying parsing, semantic analysis, and code generation algorithms. I am also interested in compiler optimizations (their theory and implementation), and LLVM. In particular, I spend a lot of time thinking about ways to apply my theoretical background to optimization algorithms (see below). I have some background in security as well, and hope to spend more time studying compiler security and safety.
-
-I have a curiosity for neurosymbolic proof systems such as [DeepMind's AlphaGeometry](https://github.com/google-deepmind/alphageometry) and [LeanDojo's ReProver](https://github.com/lean-dojo/ReProver), and (unsuccessfully) attempted to implement my own model for verifying the commutativity of diagrams in category theory. Although the final product did not perform especially well, working on the model from scratch was a valuable learning experience and I walked away feeling much more comfortable working with tools for ML. I am a strong supporter of efforts towards aligning AI and building a strong ethical foundation for machine learning technologies, as they become increasingly integrated into day-to-day life.
-
-Current projects
+Current Work
 ------
+- Theorae ⊆ CatColab
+
+I am currently working on CatColab's DoubleTT project at the Topos Institute in Berkeley, CA. This summer I am implementing Theorae (WIP title), a DSL for specifying modal double theories, in as much generality as the system will allow without becoming cumbersome for the user. 
+
+- Double Category Theory in Lean
+
+A project I began towards the end of my program at Stanford, and which I have continued working on in my spare time. My (optimistic) goal is to implement a library in Lean4 that encompasses all of the essential tools of (virtual) double category theory routinely used by applied category theorists. The ergonomics of this library are particularly important, and currently one of the main challenges to this project --- there is a great deal of friction between the multi-dimensionality of double categories and the desire to stay as far from dependent type hell as possible. At the moment I am working on navigating this tension in the core structures of the library, and hope to arrive at a compromise between a faithful encoding of the mathematical definitions and a Not Terrible To Use™ interface.
+
+- Type Set Specialization
+
+Type set specialization (TSS) is an extension of the Lambda Set Specialization [TODO] algorithm for terms of arbitrary types which I spent some time collaborating with Ben Driscoll [TODO] on during my time at Stanford. The idea behind this generalization is a kind of extra-juiced constant propagation at the type level, to expose type-theoretic optimizations to the compiler. For instance, using TSS and inlining, we can reduce the program
+```
+def nonzero(x : Nat) → Bool = match x {
+zero ⇒ false
+suc( ) ⇒ true
+}
+let maybe = if nonzero(suc(nbad)) then good else bad
+```
+to simply
+```
+let maybe : Good + Bad = good
+```
+where one assumes that `nbad : Nat` is some runtime value that we would like to obscure from the compiler, and Bad is some type which we would like to avoid terms of in our program.
+
+
+
+
+as an engineering research associate at the Topos Institute's office in Berkeley, CA. This summer I am implementing a DSL for
+
+Bryce Goldman is an engineering RA working on CatColab’s Double TT project with Evan Patterson this summer. He will be implementing a DSL for specifying modal theories and refining the TT package using a type theory for virtual double categories. Bryce recently completed his M.S. in computer science at Stanford, and is broadly interested in compilers, programming languages, and formal methods (and applications of category theory therein).
+
+
 Currently I spend a lot of time thinking about the Morphic compiler, and I'm working on trying to generalize the compiler's Lambda Set Specialization algorithm. I am hoping to extend LSS to the dependently-typed setting, and enable greater precision in the compiler's inference of certain type constraints for better code generation.
 
 In my spare time, I've begun writing a compiler in Rust for a functional programming language of my own design. This is mostly to practice working with Rust, but I also plan to use this as an opportunity to get my hands dirty with using an LLVM backend. I am also porting over to Rust a command-line tool I originally wrote in Python with a friend in 2024, for computing statistics on decklists scraped from online Magic the Gathering tournaments. I used this tool last year to study the metagame leading up to the Pioneer Regional Championship in DC, and hope to do the same this year to prepare for the RC in Las Vegas (ideally with a much cleaner and more efficient codebase this time).
