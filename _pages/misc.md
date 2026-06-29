@@ -49,12 +49,12 @@ Young couple on BART<br>
 I would be grateful if you'd<br>
 stop fucking smoking
 
-Reading List
+(Mostly) Science Fiction Reading List
 ------
 
 (Books are organized according to the system pioneered by Charles Dickens to classify his Christmas phantoms. Written bottom to top, so I guess that is also the intended order for consumption? Oops, sorry.)
 
-Future:
+**Future:**
 
 * *Authority* (Jeff VanderMeer)
 
@@ -66,11 +66,11 @@ Future:
 
 * *Foundation* (Isaac Asimov)
 
-Present:
+**Present:**
 
 * *A Storm of Swords* (George R. R. Martin)
 
-Past:
+**Past:**
 
 * *A Clash of Kings* (George R. R. Martin)
 
