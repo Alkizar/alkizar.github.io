@@ -15,7 +15,7 @@ Current Work
 Theorae ⊆ CatColab
 ------
 
-I am currently working on <a href='https://topos.institute/work/catcolab/'>CatColab</a>'s DoubleTT project at the <a href='https://topos.institute/'>Topos Institute</a> in Berkeley, CA. This summer I am implementing Theorae (WIP title), a DSL for specifying modal double theories, in as much generality as the system will allow without becoming cumbersome for the user. 
+I am currently working on <a href='https://topos.institute/work/catcolab/'>CatColab</a>'s DoubleTT project at the <a href='https://topos.institute/'>Topos Institute</a> in Berkeley, CA. This summer I am implementing Theorae (WIP title), a DSL for specifying modal double theories, in as much generality as the system will allow without becoming cumbersome for the user. Theorae will enable DoubleTT models to be instantiated over custom categorical logics outside of the handful which are currently hard-coded into the backend, with compile-time validation via a type system for virtual double categories. 
 
 Double Category Theory in Lean
 ------

@@ -25,28 +25,28 @@ Public Transit Haikus
 
 As a perennial public transit enjoyer, I often have time to kill on the bus or train. The following is a modest collection of amateur (load-bearing adjective) haikus born of my adventures on AC Transit:
 
-"Doors are now closing"
-Body melts into the seat
+"Doors are now closing"<br>
+Body melts into the seat<br>
 I am homeward bound
 
-Old man on the train
-Why have you removed your shoe?
+Old man on the train<br>
+Why have you removed your shoe?<br>
 Bare toes on the seat
 
-Sweltering cabin
-Pointed absence of AC
+Sweltering cabin<br>
+Pointed absence of AC<br>
 This bus is too hot
 
-Bus guy with bouquet
-I know that it's new year's eve
+Bus guy with bouquet<br>
+I know that it's new year's eve<br>
 But please stop singing
 
-Dearest bus driver
-Please do not pull further up
+Dearest bus driver<br>
+Please do not pull further up<br>
 As I run to you
 
-Young couple on BART
-I would be grateful if you'd 
+Young couple on BART<br>
+I would be grateful if you'd<br>
 stop fucking smoking
 
 
