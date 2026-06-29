@@ -11,7 +11,7 @@ For my final project in Prof. Michael Genesereth's logic programming course at S
 
 Owing to my disdain for the user's experience (yes you, dear reader), the frontend is merely a primitive Javascript interface for the typechecker. The language's grammar can likely be deduced by any initiate of a Lean-like language, but I include a BNF description below for completion:
 
-```ebnf
+```
 <Declaration>     ::= <Axiom> | <Def> | <Inductive> | <Struct>
 <Axiom>           ::= axiom <Name> : <Term>
 <Def>             ::= def <Name> .{<UniverseParams>}? <Param>* : <Term> := <Term>

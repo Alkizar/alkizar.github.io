@@ -34,7 +34,7 @@ The name of the course, "MUSA 174", originates from its lower division analog <a
 Legacy
 ======
 
-It is my understanding that this course is still being taught at UC Berkeley, by my grand-alumni (alumni of my alumni, to whom I initially passed the torch). I am genuinely thrilled that this class has survived my graduation, and hope that other institutions begin offering similar courses in the future. While it would be fantastic to see the university officially incorporate the course into their mathematics curriculum, part of me believes that it is better left in the hands of the students as a kind of informal seminar, without the burden of exams or the threat of final grades.
+It is my understanding that this course is still being taught at UC Berkeley, by my grand-alumni (alumni of my alumni, to whom I initially passed the torch). I am genuinely so stoked that this class has survived. While it would be really cool to see the university officially adopt the course into their mathematics curriculum, part of me believes that it is better left in the hands of the students as a kind of informal seminar, without the burden of exams or the threat of final grades.
 
 Syllabus
 ======
