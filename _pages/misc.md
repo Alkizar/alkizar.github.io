@@ -11,14 +11,15 @@ redirect_from:
 
 {% include base_path %}
 
-My free time is mostly occupied by a convex combination of the following activities:
+My free time is mostly occupied by a convex combination of the following:
 
 Magic the Gathering
 ------
 
-I am an <a href="https://blogs.magicjudges.org/o/judge-levels/">L1 judge</a> for (in)famous children's trading card game Magic the Gathering™, and competed in my first regional championship in 2025 in Vegas. I mostly play modern, but on occasion I dip my toes into standard (before being reminded of how terrible the format is) and Canadian Highlander. 
+I am an <a href="https://blogs.magicjudges.org/o/judge-levels/">L1 judge</a> for (in)famous children's trading card game Magic the Gathering™, and competed in my first regional championship in 2025 in Vegas. I mostly play modern, but occasionally I dip my toes into standard (before being reminded of how terrible the format is) and Canadian Highlander. 
 
-I have earned a reputation in the Bay Area as the "resident control player," and have been piloting various flavors of <a href="https://mtg.fandom.com/wiki/Control_deck">"draw-go"</a> in most 60-card constructed formats for many years. One might think this would lead me to be much more competent at the archetype than I am, but somehow even with a truly heinous amount of experience with this particular style of deck I routinely manage to find new and creative ways to snatch defeat from the jaws of victory.
+I have earned a reputation in the Bay Area as the "resident control player," and have been piloting various flavors of <a href="https://mtg.fandom.com/wiki/Control_deck">"draw-go"</a> in most 60-card constructed formats for many years. Somehow despite my truly heinous amount of experience with this particular style of deck I routinely manage to find new and creative ways to snatch defeat from the jaws of victory.
+
 
 Public Transit Haikus
 ------
@@ -50,11 +51,6 @@ I would be grateful if you'd<br>
 stop fucking smoking
 
 
-Lockpicking
-------
-
-Still improving, but soon I will be in your walls.
-
 Photography
 ------
 
@@ -67,6 +63,11 @@ I got really into macro photography in high school after <a href="https://en.wik
 <img src="https://alkizar.github.io/images/photos/glass.jpg">
 
 <img src="https://alkizar.github.io/images/photos/glasses_plural.jpg">
+
+Lockpicking
+------
+
+Still improving, but soon I will be in your walls. :)
 
 <!--
 (Mostly) Science Fiction Reading List
