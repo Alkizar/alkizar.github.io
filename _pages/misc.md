@@ -24,7 +24,7 @@ I have earned a reputation in the Bay Area as the "resident control player," and
 Public Transit Haikus
 ------
 
-As a perennial public transit enjoyer, I often have time to kill on the bus or train. The following is a modest collection of amateur (load-bearing adjective) haikus born of my adventures on AC Transit:
+As a perennial public transit enjoyer, I often have time to kill while riding the bus or train. The following is a modest collection of amateur (load-bearing adjective) haikus born of my adventures on AC Transit:
 
 "Doors are now closing"<br>
 Body melts into the seat<br>
@@ -56,13 +56,13 @@ Photography
 
 I got really into macro photography in high school after <a href="https://en.wikipedia.org/wiki/Stockholm_syndrome">taking the same photography class three semesters in a row.</a> Due to a lack of camera access, I have not been able to keep up with the hobby, but my hope is to obtain a decent camera and some wide angle lenses in the not-so-distant future so I can pick it back up. Here are some photos I've taken in the past that I'm proud of:
 
-<img src="https://alkizar.github.io/images/photos/heart.jpg">
+<img src="https://alkizar.github.io/images/photos/heart.jpg" alt="A red heart-shaped crystal on a surface of shiny black feathers" width=500>
 
-<img src="https://alkizar.github.io/images/photos/queen.jpg">
+<img src="https://alkizar.github.io/images/photos/queen.jpg" alt="The white queen threatens a hanging black knight on a chess board in shallow focus" width=500>
 
-<img src="https://alkizar.github.io/images/photos/glass.jpg">
+<img src="https://alkizar.github.io/images/photos/glass.jpg" alt="A shotglass on its side on a dark reflective plane" width=500>
 
-<img src="https://alkizar.github.io/images/photos/glasses_plural.jpg">
+<img src="https://alkizar.github.io/images/photos/glasses_plural.jpg" alt="Several wine glasses aligned colinearly with each other and the camera, so that they appear nested within each other" width=300>
 
 Lockpicking
 ------

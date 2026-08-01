@@ -1,9 +1,8 @@
 ---
-title: '(Obstructions to) A Categorical Description for DFA Compiler Optimizations'
+title: 'A Synthetic Description of Monotone Dataflow Analysis'
 date: 2026-06-28
-permalink: /posts/2026/06/categorical_dfa/
+permalink: /posts/2026/06/synthetic_dfa/
 tags:
-  - category theory
   - compilers
 ---
 
@@ -12,8 +11,14 @@ tags:
 Monotone Dataflow Analysis
 ======
 
-Why Things Should Work
+Background
 ======
 
-Why They Don't
+Classical Theory
+======
+
+Synthetic Theory
+======
+
+Categorical Motivations
 ======
