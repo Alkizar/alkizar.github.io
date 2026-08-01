@@ -11,14 +11,14 @@ redirect_from:
 
 {% include base_path %}
 
-My free time is consumed by a convex combination of the following activities:
+My free time is mostly occupied by a convex combination of the following activities:
 
 Magic the Gathering
 ------
 
 I am an <a href="https://blogs.magicjudges.org/o/judge-levels/">L1 judge</a> for (in)famous children's trading card game Magic the Gathering™, and competed in my first regional championship in 2025 in Vegas. I mostly play modern, but on occasion I dip my toes into standard (before being reminded of how terrible the format is) and Canadian Highlander. 
 
-I have earned a reputation in the Bay Area as the "resident control player," and have been piloting various flavors of draw+go decks in every format I play for many years. One might think this would lead me to be much more competent at the archetype than I am, but somehow even today I routinely manage to find new and creative ways to snatch defeat from the jaws of victory.
+I have earned a reputation in the Bay Area as the "resident control player," and have been piloting various flavors of <a href="https://mtg.fandom.com/wiki/Control_deck">"draw-go"</a> in most 60-card constructed formats for many years. One might think this would lead me to be much more competent at the archetype than I am, but somehow even with a truly heinous amount of experience with this particular style of deck I routinely manage to find new and creative ways to snatch defeat from the jaws of victory.
 
 Public Transit Haikus
 ------
@@ -49,6 +49,26 @@ Young couple on BART<br>
 I would be grateful if you'd<br>
 stop fucking smoking
 
+
+Lockpicking
+------
+
+Still improving, but soon I will be in your walls.
+
+Photography
+------
+
+I got really into macro photography in high school after <a href="https://en.wikipedia.org/wiki/Stockholm_syndrome">taking the same photography class three semesters in a row.</a> Due to a lack of camera access, I have not been able to keep up with the hobby, but my hope is to obtain a decent camera and some wide angle lenses in the not-so-distant future so I can pick it back up. Here are some photos I've taken in the past that I'm proud of:
+
+<img src="https://alkizar.github.io/images/photos/heart.jpg">
+
+<img src="https://alkizar.github.io/images/photos/queen.jpg">
+
+<img src="https://alkizar.github.io/images/photos/glass.jpg">
+
+<img src="https://alkizar.github.io/images/photos/glasses_plural.jpg">
+
+<!--
 (Mostly) Science Fiction Reading List
 ------
 
@@ -95,7 +115,8 @@ stop fucking smoking
 * *Exhalation* (Ted Chiang) --- I found this anthology to be less engaging than its predecessor. Finishing "The Lifecycle of Software Objects" began to feel like a chore, and I really didn't feel like I gained anything as a reader from it dragging on as long as it did. A few interesting ideas were presented, but it fell short of asking some of the more uncomfortable questions that I felt like it had to be setting up. I don't know, maybe I am not sufficiently cozy-core for this particular story. The story "Exhalation" was good.
 
 * *Stories of Your Life and Others* (Ted Chiang) --- I enjoyed most of the short stories, especially "Division by Zero" and "Hell is the Absence of God". I felt that "Understand" was a little goofy by the end (which may have been the point) and I found it difficult to take the narrator seriously by the end of it.
+-->
 
 <!--
-[mtg, photography, D&D, lockpicking, public transit haikus, dumb discord bots]
+[photography, D&D, lockpicking, public transit haikus, dumb discord bots]
 -->
