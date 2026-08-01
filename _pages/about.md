@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a research software developer working in applied category theory, compilers, and formal methods. I completed my M.S. in computer science at Stanford University in 2026, and my B.A. in mathematics at UC Berkeley in 2023. I am broadly interested in applying tools from category theory to programming languages, type theory, automated reasoning, and computational logic. 
+I am a research software developer working in applied category theory, compilers, and formal methods. I completed my M.S. in computer science at Stanford University in 2026, and my B.A. in mathematics at UC Berkeley in 2023. I am broadly interested in categorical logic, programming languages, type theory, and automated reasoning.
 
 Current Work
 ======
@@ -15,7 +15,7 @@ Current Work
 Theorae ⊆ CatColab
 ------
 
-I am currently working on <a href='https://topos.institute/work/catcolab/'>CatColab</a>'s DoubleTT project at the <a href='https://topos.institute/'>Topos Institute</a> in Berkeley, CA. This summer I am implementing Theorae (WIP title), a DSL for specifying modal double theories, in as much generality as the system will allow without becoming cumbersome for the user. Theorae will enable DoubleTT models to be instantiated over custom categorical logics outside of the handful which are currently hard-coded into the backend, with compile-time validation via a type system for virtual double categories. 
+I am currently working on <a href='https://topos.institute/work/catcolab/'>CatColab</a>'s DoubleTT project at the <a href='https://topos.institute/'>Topos Institute</a>. This summer I am implementing Theorae (WIP title), a DSL for specifying modal virtual double theories, in as much generality as the system will allow without becoming cumbersome for the user. This project began as an attempt to implement Hayato Nasu's <a href="https://arxiv.org/abs/2410.06792">type theory for virtual double categories</a>, but we quickly realized that this type theory did not entirely meet our needs. Theorae's type system, while still inspired by Nasu's work, is resource-sensitive (i.e. linear) and ordered (in the loose direction), and accomodates any collection of modalities that preserve the theory's structure (e.g. the various double-categorical manifestations of the list monad). Theorae will enable DoubleTT models to be instantiated over custom categorical logics outside of the handful which are currently hard-coded into the backend, with compile-time validation via a type system for virtual double categories. 
 
 Double Category Theory in Lean
 ------

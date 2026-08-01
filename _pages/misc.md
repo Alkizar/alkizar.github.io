@@ -18,7 +18,7 @@ Magic the Gathering
 
 I am an <a href="https://blogs.magicjudges.org/o/judge-levels/">L1 judge</a> for (in)famous children's trading card game Magic the Gathering™, and competed in my first regional championship in 2025 in Vegas. I mostly play modern, but occasionally I dip my toes into standard (before being reminded of how terrible the format is) and Canadian Highlander. 
 
-I have earned a reputation in the Bay Area as the "resident control player," and have been piloting various flavors of <a href="https://mtg.fandom.com/wiki/Control_deck">"draw-go"</a> in most 60-card constructed formats for many years. Somehow despite my truly heinous amount of experience with this particular style of deck I routinely manage to find new and creative ways to snatch defeat from the jaws of victory.
+I have earned a reputation in the Bay Area as the "resident control player," and have been piloting various flavors of <a href="https://mtg.fandom.com/wiki/Control_deck"> reactive "draw-go" decks</a> in most 60-card constructed formats for many years. Somehow despite my truly heinous amount of experience with this archetype I routinely manage to find new and creative ways to snatch defeat from the jaws of victory.
 
 
 Public Transit Haikus
@@ -119,5 +119,5 @@ Still improving, but soon I will be in your walls. :)
 -->
 
 <!--
-[photography, D&D, lockpicking, public transit haikus, dumb discord bots]
+[D&D, dumb discord bots]
 -->

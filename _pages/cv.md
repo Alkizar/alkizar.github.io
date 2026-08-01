@@ -21,9 +21,9 @@ Education
 Work Experience
 ======
 * Summer 2026: Research Associate
-  * Topos Institute
+  * <a href="https://topos.institute/">Topos Institute</a>
   * Developed a DSL for use in <a href="https://topos.institute/work/catcolab/">CatColab</a>'s categorical logic package, which facilitates the implementation of general modal double theories. [TODO]-link to repo once public
-  * Supervisor: Evan Patterson
+  * Supervised by Evan Patterson
 
 * Summer 2024: Student Assistant
   * San Francisco State University
@@ -39,6 +39,11 @@ Work Experience
   * University of Chicago
   * Duties included: Conducting research in stable homotopy theory and category theory; see <a href="https://alkizar.github.io/project/graded_monoidal_categories">my senior thesis</a>
   * Advised by Prof. J. Peter May
+
+* Fall 2019: Course Reader
+  * UC Berkeley, Fall Program for Freshmen
+  * Duties included: Grading student assignments for courses in calculus
+  * Supervised by Derrick Smith
   
 Technical Skills
 ======
