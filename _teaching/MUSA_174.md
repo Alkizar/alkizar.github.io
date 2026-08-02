@@ -8,7 +8,7 @@ date: 2022-01-01
 location: "Berkeley, CA"
 ---
 
-An introduction to category theory, especially targeted towards advanced undergraduates transitioning into graduate-level coursework (which often references categorical concepts without covering them in much detail).
+An introduction to category theory, especially geared towards advanced undergraduates transitioning into graduate-level coursework.
 
 Description
 ======
