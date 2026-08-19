@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a research software developer working in applied category theory, compilers, and formal methods. I completed my M.S. in computer science at Stanford University in 2026, and my B.A. in mathematics at UC Berkeley in 2023. I am broadly interested in categorical logic, programming languages, type theory, and automated reasoning; in my free time I also play (and judge) Magic the Gathering competitively, write mediocre poetry about my experiences on public transportation, and practice lockpicking (see <a href="https://alkizar.github.io/misc/">misc</a>).
+I am a research software developer working in applied category theory, compilers, and formal methods. I completed my M.S. in computer science at Stanford University in 2026, and my B.A. in mathematics at UC Berkeley in 2023. I am broadly interested in categorical logic, programming languages, type theory, and automated reasoning; in my free time I also play (and judge) Magic the Gathering competitively, write mediocre poetry about my experiences on public transportation, and practice lockpicking (see <a href="https://alkizar.github.io/misc/">my miscellany</a>).
 
 Current Work
 ======

@@ -51,8 +51,8 @@ Technical Skills
 In general I am most comfortable working with systems, functional, and logic programming languages. I have substantial experience using the following:
 
 * Languages: Rust, C/C++, Lean, Haskell, Agda, Python, Java, Epilog
-* Toolkits: LLVM, Yacc, Flex, PyTorch, SciPy
-* Other: LaTeX, cvc5, egglog, CUDA, AWS Neuron
+* Toolkits: LLVM, Yacc, Flex, PyTorch, SciPy, CUDA, AWS Neuron
+* Other: LaTeX, cvc5, egglog
 
 Projects
 ======
