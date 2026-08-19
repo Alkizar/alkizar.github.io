@@ -14,4 +14,4 @@ Presented for the [Topos Institute's Berkeley Seminar](https://topos.institute/e
 
 **Slides:** 
 
-<iframe src="https://alkizar.github.io/files/modaltt_slides.html" width="100%" height="500px" title="test"></iframe>
+<iframe src="https://alkizar.github.io/files/slides/modaltt_slides/modaltt_slides.html" width="100%" height="500px" title="test"></iframe>
