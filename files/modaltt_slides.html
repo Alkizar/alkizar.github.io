@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="modaltt_slides_files/libs/clipboard/clipboard.min.js"></script>
+<script src="modaltt_slides_files/libs/quarto-html/tabby.min.js"></script>
+<script src="modaltt_slides_files/libs/quarto-html/popper.min.js"></script>
+<script src="modaltt_slides_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="modaltt_slides_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="modaltt_slides_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="modaltt_slides_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
+
+  <meta name="author" content="Bryce Goldman">
+  <title>ModalTT: A Type Theory for Modal Virtual Double Theories</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="modaltt_slides_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="modaltt_slides_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="modaltt_slides_files/libs/revealjs/dist/theme/quarto-28d139f158fb03528859f3ef71c96549.css">
+  <link href="modaltt_slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="modaltt_slides_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="modaltt_slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="modaltt_slides_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title"><p>ModalTT: A Type Theory for Modal Virtual Double Theories</p></h1>
+  <p class="subtitle">Topos Institute Berkeley Seminar · August 17, 2026</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Bryce Goldman
+</div>
+        <p class="quarto-title-affiliation">
+            <img alt="Topos Institute" src="figures/topos_logo.png" height="90" style="vertical-align: middle">
+          </p>
+    </div>
+</div>
+
+</section>
+<section id="overview" class="slide level2">
+<h2>Overview</h2>
+<p>I will be talking about a type theory and accompanying DSL for specifying <strong>modal virtual double theories</strong>.</p>
+<p><br></p>
+<div class="fragment">
+<p>Some familiarity with virtual double categories (VDCs) will be assumed. Very little type theory background will (hopefully) be required.</p>
+</div>
+</section>
+<section id="overview-1" class="slide level2">
+<h2>Overview</h2>
+<p>The next 60 minutes of our lives should look roughly as follows:</p>
+<div class="fragment">
+<ol type="1">
+<li>Motivate the software problem this project is attempting to solve.</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="2" type="1">
+<li>Outline some past work that motivated our approach.</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="3" type="1">
+<li>Briefly demo our DSL.</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="4" type="1">
+<li>Describe our type theory for modal virtual double theories.</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="5" type="1">
+<li>(Maybe questions? Who can say what the world will look like in an hour.)</li>
+</ol>
+</div>
+</section>
+<section id="doublett-and-categorical-logic" class="slide level2">
+<h2>DoubleTT and categorical logic</h2>
+<p><span class="define">CatColab</span> is a collaborative modelling platform based on <b>categorical logic</b>.</p>
+<div class="fragment">
+<p><span class="define">DoubleTT</span> is an extension of CatColab which facilitates model composition using a type theory for models of double theories.</p>
+</div>
+<div class="fragment">
+<p>The <strong>theory</strong> for a particular logic defines the “shape” of models in the corresponding <strong>doctrine</strong>. Formally:</p>
+</div>
+<div class="fragment">
+<ul>
+<li>a <span class="define">theory</span> is a fibrational VDC (possibly unital, possibly with loose composites) equipped with zero or more double monads, called <b>modalities</b>.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>a <span class="define">model</span> <span class="math inline">\(M\)</span> of a theory <span class="math inline">\(\mathbb{T}\)</span> is a restriction-preserving functor <span class="math display">\[M : \mathbb{T} \to \mathbb{S}\mathrm{pan}\]</span>.</li>
+</ul>
+</div>
+</section>
+<section id="doublett-and-categorical-logic-1" class="slide level2">
+<h2>DoubleTT and categorical logic</h2>
+<p><span class="define">Example:</span> the theory of <b>categories</b> is a unital VDC with a single object and no (nonunital) tight/loose arrows.</p>
+<div class="fragment">
+<p><br></p>
+<p><span class="define">Example:</span> the theory of <b>monoidal categories</b> is a unital VDC, equipped with “the” list monad <span class="math inline">\(\mathrm{List}\)</span>, generated by an object <span class="math inline">\(X\)</span> and a tight morphism <span class="math display">\[\otimes: \mathrm{List}(X) \to X\]</span>.</p>
+</div>
+</section>
+<section id="doublett-and-categorical-logic-2" class="slide level2">
+<h2>DoubleTT and categorical logic</h2>
+<p><span class="define">Example:</span> the theory of <b>promonads</b> is a unital VDC with an object <span class="math inline">\(X\)</span>, a proarrow <span class="math inline">\(P : X \nrightarrow X\)</span> such that the loose composite <span class="math inline">\(P \odot P\)</span> is defined and is equal to <span class="math inline">\(P\)</span>, and a virtual cell <span class="math inline">\(\theta\)</span>:</p>
+<div class="tikzcd">
+<script type="text/tikz">
+\begin{tikzcd}[ampersand replacement=\&, column sep=1em]
+    \& X \& \\
+    X \& {} \& X
+    \arrow[equals, from=1-2, to=2-1]
+    \arrow["\theta"{description}, draw=none, from=1-2, to=2-2]
+    \arrow[equals, from=1-2, to=2-3]
+    \arrow["P"'{inner sep=.8ex}, "\shortmid"{marking}, from=2-1, to=2-3]
+\end{tikzcd}
+</script>
+</div>
+<div class="fragment">
+<p>such that the cell equalities below are satisfied:</p>
+<div class="tikzcd">
+<script type="text/tikz">
+\begin{tikzcd}[ampersand replacement=\&]
+    \& X \& X \\
+    X \& X \& X \\
+    X \&\& X
+    \arrow[""{name=0, anchor=center, inner sep=0}, "P"{inner sep=.8ex}, "\shortmid"{marking}, from=1-2, to=1-3]
+    \arrow[equals, from=1-2, to=2-2]
+    \arrow[equals, from=1-3, to=2-3]
+    \arrow[equals, from=2-1, to=1-2]
+    \arrow[""{name=1, anchor=center, inner sep=0}, "P"'{inner sep=.8ex}, "\shortmid"{marking}, from=2-1, to=2-2]
+    \arrow[equals, from=2-1, to=3-1]
+    \arrow[""{name=2, anchor=center, inner sep=0}, "P"'{inner sep=.8ex}, "\shortmid"{marking}, from=2-2, to=2-3]
+    \arrow[equals, from=2-3, to=3-3]
+    \arrow[""{name=3, anchor=center, inner sep=0}, "{P\odot P}"'{inner sep=.8ex}, "\shortmid"{marking}, from=3-1, to=3-3]
+    \arrow["\theta"{description}, draw=none, from=1-2, to=1]
+    \arrow["{1_P}"{description}, draw=none, from=0, to=2]
+    \arrow["{\mathrm{comp}}"{description}, draw=none, from=2-2, to=3]
+\end{tikzcd} \hspace{1em} = \hspace{1em} \begin{tikzcd}
+    X \& X \\
+    X \& X
+    \arrow[""{name=0, anchor=center, inner sep=0}, "P"{inner sep=.8ex}, "\shortmid"{marking}, from=1-1, to=1-2]
+    \arrow[equals, from=1-1, to=2-1]
+    \arrow[equals, from=1-2, to=2-2]
+    \arrow[""{name=1, anchor=center, inner sep=0}, "P"'{inner sep=.8ex}, "\shortmid"{marking}, from=2-1, to=2-2]
+    \arrow["{1_P}"{description}, draw=none, from=0, to=1]
+\end{tikzcd} \hspace{1em} = \hspace{1em} \begin{tikzcd}
+    X \& X \& \\
+    X \& X \& X \\
+    X \&\& X
+    \arrow[""{name=0, anchor=center, inner sep=0}, "P"{inner sep=.8ex}, "\shortmid"{marking}, from=1-1, to=1-2]
+    \arrow[equals, from=1-1, to=2-1]
+    \arrow[equals, from=1-2, to=2-2]
+    \arrow[equals, from=1-2, to=2-3]
+    \arrow[""{name=1, anchor=center, inner sep=0}, "P"'{inner sep=.8ex}, "\shortmid"{marking}, from=2-1, to=2-2]
+    \arrow[equals, from=2-1, to=3-1]
+    \arrow[""{name=2, anchor=center, inner sep=0}, "P"'{inner sep=.8ex}, "\shortmid"{marking}, from=2-2, to=2-3]
+    \arrow[equals, from=2-3, to=3-3]
+    \arrow[""{name=3, anchor=center, inner sep=0}, "P \odot P"'{inner sep=.8ex}, "\shortmid"{marking}, from=3-1, to=3-3]
+    \arrow["{1_P}"{description}, draw=none, from=0, to=1]
+    \arrow["\theta"{description}, draw=none, from=1-2, to=2]
+    \arrow["{\mathrm{comp}}"{description}, draw=none, from=2-2, to=3]
+\end{tikzcd}
+</script>
+</div>
+</div>
+</section>
+<section id="specifying-custom-theories" class="slide level2">
+<h2>Specifying custom theories</h2>
+<p>Currently the theories available in DoubleTT are a small handful of static, hard-coded options.</p>
+<div class="fragment">
+<p><span class="define">Goal:</span> allow the user to define their favorite theory by</p>
+</div>
+<div class="fragment">
+<ol type="1">
+<li>specifying a signature (generators)</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="2" type="1">
+<li>specifying axioms (relations)</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="3" type="1">
+<li>with a guarantee that the resulting theory is always <em>correct by construction</em>.</li>
+</ol>
+</div>
+</section>
+<section id="specifying-custom-theories-1" class="slide level2">
+<h2>Specifying custom theories</h2>
+<p><span class="define">Idea:</span> annotate the user-specified theory with types, such that a theory which successfully typechecks is always valid.</p>
+<div class="fragment">
+<p><br></p>
+<p><span class="define">Observation:</span> user-defined axioms can equate any pair of cells with the same boundary, so this amounts to a type theory for the internal language of VDCs.</p>
+</div>
+<div class="fragment">
+<p><br></p>
+<p><span class="define">Remark:</span> as we saw for the theory of promonads, theories may also equate (pro)arrows, so even checking compatibility of cell boundaries is nontrivial.</p>
+</div>
+</section>
+<section id="an-internal-logic-of-vdcs" class="slide level2">
+<h2>An internal logic of VDCs</h2>
+<p>Hayato Nasu’s <a href="https://arxiv.org/pdf/2410.06792">past work</a> on a type theory for (fibrational, cartesian) VDCs guided the early stages of this project.</p>
+<div class="fragment">
+<p><span class="define">Idea:</span> describe a <b>pointful syntax</b> for the constructs in a VDC, which reduces equivalent (via universal property) structures to a single normal form.</p>
+</div>
+<div class="fragment">
+<p><br></p>
+<p>Here “pointful” means we refer to terms in the type theory with functions applied to arguments, in contrast to the “point-free” morphism notation we are familiar with in category theory:</p>
+</div>
+<div class="fragment">
+<p><span class="define">Example:</span> given morphisms <span class="math inline">\(f : X \times Y \to U,\)</span> <span class="math inline">\(g : X \to V\)</span>, and <span class="math inline">\(h : U \times V \to Z,\)</span> we can construct a map <span class="math inline">\(X \times Y \to Z\)</span> which is written in both styles below:</p>
+</div>
+<div class="fragment">
+<p><strong>Point-free:</strong> <span class="math inline">\(h \circ (f \times g) \circ (1_X \times \sigma_{X, Y}) \circ (\Delta_X \times 1_Y)\)</span></p>
+</div>
+<div class="fragment">
+<p><strong>Pointful:</strong> <span class="math inline">\(x : X, y : Y \vdash h(f(x, y), g(x))\)</span></p>
+</div>
+</section>
+<section id="an-internal-logic-of-vdcs-1" class="slide level2">
+<h2>An internal logic of VDCs</h2>
+<p>The correspondence between constructs in a VDC and the syntax of Nasu’s type theory is outlined below:</p>
+<p><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 62%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>VDC Construct</th>
+<th>Syntactic Form</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="define">Object</span></td>
+<td>Type</td>
+<td><span class="math inline">\(X \Leftrightarrow X \text{ type}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="define">Product</span></td>
+<td>Context</td>
+<td><span class="math inline">\(\prod_{i=1}^n X_i \Leftrightarrow x_1 : X_1, \dots, x_n : X_n \text{ ctx}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="define">Morphism</span></td>
+<td>Term</td>
+<td><span class="math inline">\(s : \Gamma \to X \Leftrightarrow \Gamma \vdash s : X\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="define">Proarrow</span></td>
+<td>Protype</td>
+<td><span class="math inline">\(P :\Gamma \nrightarrow \Delta \Leftrightarrow \Gamma ; \Delta \vdash P(s ; t) \text{ protype}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="define">Proarrow path</span></td>
+<td>Procontext</td>
+<td><span class="math inline">\(\Gamma_0 \nrightarrow \Gamma_1 \nrightarrow \cdots \nrightarrow \Gamma_n \Leftrightarrow \rho_1 : P_1, \dots, \rho_n : P_n \text{ proctx}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="define">(Globular) Cell</span></td>
+<td>Proterm</td>
+<td><span class="math inline">\(\mu : P_1, \dots, P_n \nrightarrow Q \Leftrightarrow \Gamma_0 ; \dots ; \Gamma_n \vert \rho_1 : P_1, \dots, \rho_n : P_n \vdash \mu : Q\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="an-internal-logic-of-vdcs-2" class="slide level2">
+<h2>An internal logic of VDCs</h2>
+<h4 id="example">Example</h4>
+<p>The (tight) identity cell</p>
+<div class="tikzcd">
+<script type="text/tikz">
+\begin{tikzcd}[ampersand replacement=\&]
+    X \& Y \\
+    X \& Y
+    \arrow[""{name=0, anchor=center, inner sep=0}, "P"{inner sep=.8ex}, "\shortmid"{marking}, from=1-1, to=1-2]
+    \arrow[equals, from=1-1, to=2-1]
+    \arrow[equals, from=1-2, to=2-2]
+    \arrow[""{name=1, anchor=center, inner sep=0}, "P"'{inner sep=.8ex}, "\shortmid"{marking}, from=2-1, to=2-2]
+    \arrow["{1_P}"{description}, draw=none, from=0, to=1]
+\end{tikzcd}
+</script>
+</div>
+<div class="fragment">
+<p>…is represented by the proterm</p>
+<p><span class="math display">\[x : X, y : Y \vert p : P(x ; y) \vdash p : P(x ; y)\]</span></p>
+</div>
+</section>
+<section id="an-internal-logic-of-vdcs-3" class="slide level2">
+<h2>An internal logic of VDCs</h2>
+<h4 id="example-1">Example</h4>
+<p>The virtual composite cell</p>
+<div class="tikzcd">
+<script type="text/tikz">
+\begin{tikzcd}[ampersand replacement=\&]
+    X \& Y \& Z \\
+    {X'} \& {Y'} \& {Z'} \\
+    {X''} \&\& {Z''}
+    \arrow[""{name=0, anchor=center, inner sep=0}, "M"{inner sep=.8ex}, "\shortmid"{marking}, from=1-1, to=1-2]
+    \arrow["f"', from=1-1, to=2-1]
+    \arrow[""{name=1, anchor=center, inner sep=0}, "N"{inner sep=.8ex}, "\shortmid"{marking}, from=1-2, to=1-3]
+    \arrow["g"{description}, from=1-2, to=2-2]
+    \arrow["g", from=1-3, to=2-3]
+    \arrow[""{name=2, anchor=center, inner sep=0}, "P"'{inner sep=.8ex}, "\shortmid"{marking}, from=2-1, to=2-2]
+    \arrow["s"', from=2-1, to=3-1]
+    \arrow[""{name=3, anchor=center, inner sep=0}, "Q"'{inner sep=.8ex}, "\shortmid"{marking}, from=2-2, to=2-3]
+    \arrow["t", from=2-3, to=3-3]
+    \arrow[""{name=4, anchor=center, inner sep=0}, "R"'{inner sep=.8ex}, "\shortmid"{marking}, from=3-1, to=3-3]
+    \arrow["\alpha"{description}, draw=none, from=0, to=2]
+    \arrow["\beta"{description}, draw=none, from=1, to=3]
+    \arrow["\gamma"{description}, draw=none, from=2-2, to=4]
+\end{tikzcd}
+</script>
+</div>
+<div class="fragment">
+<p>…is represented by the proterm</p>
+<p><span class="math display">\[
+\begin{aligned}
+x : X, y : Y, z : Z \vert m : M(x ; y), n : N(y; z) \vdash\\
+\gamma (\alpha(m), \beta(n)): R(s(f(x)) ; t(g(z)))
+\end{aligned}
+\]</span></p>
+</div>
+</section>
+<section id="an-internal-logic-of-vdcs-4" class="slide level2">
+<h2>An internal logic of VDCs</h2>
+<h4 id="restrictions">Restrictions</h4>
+<p>For this type theory to model the internal language of <strong>fibrational</strong> VDCs it needs to capture restriction cells and their universal property.</p>
+<p>Given a proarrow <span class="math inline">\(P : Y_0 \nrightarrow Y_1\)</span> and tight morphisms <span class="math inline">\(f_i : X_i \to Y_i\)</span>, the protype <span class="math display">\[
+x_0 : X_0 ; x_1 : X_1 \vdash P(f_0(x_0); f_1(x_1))
+\]</span> represents the restriction of <span class="math inline">\(P\)</span> along <span class="math inline">\(f_0\)</span> and <span class="math inline">\(f_1\)</span>.</p>
+</section>
+<section id="an-internal-logic-of-vdcs-5" class="slide level2">
+<h2>An internal logic of VDCs</h2>
+<h4 id="restrictions-1">Restrictions</h4>
+<p>We recover the corresponding restriction cell</p>
+<div class="tikzcd">
+<script type="text/tikz">
+\begin{tikzcd}[ampersand replacement=\&]
+    {X_0} \& {X_1} \\
+    {Y_0} \& {Y_1}
+    \arrow[""{name=0, anchor=center, inner sep=0}, "{P(f_0;f_1)}"{inner sep=.8ex}, "\shortmid"{marking}, from=1-1, to=1-2]
+    \arrow["{f_0}"', from=1-1, to=2-1]
+    \arrow["{f_1}", from=1-2, to=2-2]
+    \arrow[""{name=1, anchor=center, inner sep=0}, "P"'{inner sep=.8ex}, "\shortmid"{marking}, from=2-1, to=2-2]
+    \arrow["{\mathrm{rest}}"{description}, draw=none, from=0, to=1]
+\end{tikzcd}
+</script>
+</div>
+<p>with the proterm <span class="math display">\[
+x_0 : X_0, x_1 : X_1 \vert p : P(f_0(x_0); f_1(x_1)) \vdash p : P(f_0(x_0), f_1(x_1)),
+\]</span> since the tight identity cell of a restriction proarrow corresponds uniquely with the restriction cell via the universal property.</p>
+</section>
+<section id="an-internal-logic-of-vdcs-6" class="slide level2">
+<h2>An internal logic of VDCs</h2>
+<h4 id="loose-unitscomposition">(Loose) Units/Composition</h4>
+<p>The type theory can be extended with type formation, introduction, and elimination rules for loose units and loose composites.</p>
+<p>Like restriction, we encode the universal properties of these constructs using a normal form. Namely, the <span class="math inline">\(\beta\)</span>/<span class="math inline">\(\eta\)</span>-reduction rules for units and composites precisely capture their universal properties.</p>
+</section>
+<section id="an-internal-logic-of-vdcs-7" class="slide level2">
+<h2>An internal logic of VDCs</h2>
+<h4 id="shortcomings">Shortcomings</h4>
+<p>Nasu’s type theory offers a strong foundation, but it lacks some important characteristics that are important to our use case:</p>
+<div class="fragment">
+<ol type="1">
+<li><strong>Inflexible signature:</strong> generator cells cannot map into a restriction or unit proarrow, for instance.</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="2" type="1">
+<li><strong>Missing modalities:</strong> virtual double monads are not supported by the type theory, which are essential for defining many important doctrines.</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="3" type="1">
+<li><strong>Challenging to implement:</strong> the type theory is not designed with algorithmic typechecking in mind.</li>
+</ol>
+</div>
+</section>
+<section id="modaltt" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="type-theory">Type Theory</h4>
+<p>To address the problems outlined above, we have adapted Nasu’s type theory in a number of ways:</p>
+<div class="fragment">
+<ol type="1">
+<li>Our signatures stratify VDC constructs into different syntactic categories to get a more expressive range of legal generators.</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="2" type="1">
+<li>We introduce first class modality application into the syntax, without compromising the normal forms of (pro)terms.</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="3" type="1">
+<li>Our type theory uses an ordered linear logic to describe the resource-sensitivity and order-sensitivity of proterms. Loose composition reduces to the fuse operator.</li>
+</ol>
+</div>
+</section>
+<section id="modaltt-1" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="dsl-for-theory-specification">DSL for theory specification</h4>
+<p>Users specify the generators (objects, tight/loose arrows, and cells) of their theory:</p>
+<div class="fragment">
+<p><strong>Objects</strong></p>
+<pre><code>obj X
+obj [Y, Z]</code></pre>
+</div>
+<div class="fragment">
+<p><strong>Arrows and proarrows</strong></p>
+<pre><code>fun f : X -&gt; Y
+pro P : X =&gt; Y</code></pre>
+</div>
+<div class="fragment">
+<p><strong>Cells</strong></p>
+<pre><code>cell α : [P, Q] =&gt; (List R) | f -&gt; id Y</code></pre>
+</div>
+</section>
+<section id="modaltt-2" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="dsl-for-theory-specification-1">DSL for theory specification</h4>
+<p>Users can declare equalities of proarrows and of proterms (virtual cells), which define the axioms of the theory:</p>
+<div class="fragment">
+<p><strong>Proarrow Axioms</strong></p>
+<pre><code>pro_axiom P := P * P</code></pre>
+</div>
+<div class="fragment">
+<p><strong>Proterm Axioms</strong> (this is where the magic happens)</p>
+<pre><code>-- Promonad axioms
+axiom [x0 : X, x1 : X] | [p : P[x0, x1]] |- θ (x0) * p := p
+axiom [x0 : X, x1 : X] | [p : P[x0, x1]] |- p := p * θ (x1)</code></pre>
+</div>
+<div class="fragment">
+<pre><code>-- Can apply the list monad or use its (primitive) structure proterms
+axiom [x : X, y : Y] | [p : (List P)[x, y]] |- μ List [(List (η List P)) [p]] := p </code></pre>
+</div>
+<div class="fragment">
+<pre><code>-- Loose composites are destructured via let binding (more on this soon)
+axiom [x0 : X, x1 : X] | [...] |- 
+  let ([p : P[x0, x1], q : Q[x1, x2]] = α [...] * β [...]) in γ[p, q] := ...</code></pre>
+</div>
+</section>
+<section id="demo-modalttthis-is-where-bryce-will-do-the-demo" class="slide level2 video-slide center">
+<h2><span class="kicker">demo · ModalTT</span>(This is where Bryce will do The Demo™)</h2>
+<p style="text-align: center;">
+<small>(if he is not already doing The Demo™ you should politely remind him to do The Demo™)</small>
+</p>
+</section>
+<section id="modaltt-3" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="type-theory-1">Type theory</h4>
+<p>We adapt Nasu’s type theory by introducing modalities and broadening the expressive power of the generator symbols.</p>
+<p>To match the implementation, we also rely less heavily on substitution (which is badly behaved in the presence of non-syntactic equalities.)</p>
+</section>
+<section id="modaltt-4" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="signature-generators">Signature: Generators</h4>
+<p>The signature <span class="math inline">\(\Sigma\)</span> determines the structures of a theory <span class="math inline">\(\mathbb{T}_\Sigma\)</span>:</p>
+<div class="fragment">
+<ul>
+<li><span class="math inline">\(\mathcal{T}_\Sigma\)</span> is the set of object generator symbols.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><span class="math inline">\(\mathcal{F}_\Sigma(X, Y)\)</span> is the set of arrow generator symbols from <span class="math inline">\(X\)</span> to <span class="math inline">\(Y\)</span> (<span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are object symbols).</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><span class="math inline">\(\mathcal{P}_\Sigma(X, Y)\)</span> is the set of proarrow generator symbols from <span class="math inline">\(X\)</span> to <span class="math inline">\(Y\)</span> (<span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are object symbols).</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><span class="math inline">\(\mathcal{C}_\Sigma(P_1, \dots, P_n \Rightarrow Q | f \to g)\)</span> is the set of cell generator symbols (<span class="math inline">\(P_i, Q\)</span> are proarrow symbols and <span class="math inline">\(f, g\)</span> are arrow symbols).</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><span class="math inline">\(\mathcal{M}_\Sigma\)</span> is the set of modality symbols.</li>
+</ul>
+</div>
+</section>
+<section id="modaltt-5" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="signature-modal-closure">Signature: Modal Closure</h4>
+<ul>
+<li>To form the set of <em>object symbols</em> <span class="math inline">\(\widetilde{\mathcal{T}}_\Sigma\)</span>, we take the closure of <span class="math inline">\(\mathcal{T}_\Sigma\)</span> under the application of each modality symbol in <span class="math inline">\(\mathcal{M}_\Sigma.\)</span></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>The set of <em>basic arrow symbols</em> <span class="math inline">\(\widetilde{\mathcal{F}}_\Sigma\)</span> are obtained by taking the closure of <span class="math inline">\(\mathcal{F}_\Sigma\)</span>, along with the structure maps <span class="math inline">\(\eta^L\)</span> and <span class="math inline">\(\mu^L\)</span> of each monad symbol <span class="math inline">\(L \in \mathcal{M}_\Sigma\)</span>, under modal application.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>The set of <em>basic proarrow symbols</em> is defined similarly, excluding the monad structure maps.</li>
+</ul>
+</div>
+</section>
+<section id="modaltt-6" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="signature-complete-closure">Signature: Complete Closure</h4>
+<ul>
+<li>The full set of <em>arrow symbols</em> <span class="math inline">\(\hat{\mathcal{F}}_\Sigma\)</span> is obtained by closing <span class="math inline">\(\widetilde{\mathcal{F}}_\Sigma\)</span> under tight identities and composition.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>The full set of <em>proarrow symbols</em> is generated analogously (except with loose units and loose composition).</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>The set of <em>cell symbols</em> <span class="math inline">\(\widetilde{\mathcal{C}}_\Sigma(P_1, \dots, P_n \Rightarrow Q \vert f \to g)\)</span> is the closure of <span class="math inline">\(\mathcal{C}_\Sigma\)</span>, together with the structure cells <span class="math inline">\(\eta^L\)</span> and <span class="math inline">\(\mu^L\)</span> for each monad symbol <span class="math inline">\(L \in \mathcal{M}_\Sigma\)</span>, under modal application.</li>
+</ul>
+</div>
+</section>
+<section id="modaltt-7" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="signature-extended-modal-application">Signature: Extended Modal Application</h4>
+<p>Only the basic arrow/proarrow symbols are allowed to support direct, syntactic modal application.</p>
+<div class="fragment">
+<p>The application of a modality can be extended to the complete sets of arrows/proarrows by structural recursion. (The fact that each modality is expected to commute with all available structures is crucial here.)</p>
+</div>
+<div class="fragment">
+<p>For instance, on arrow symbols we define <span class="math display">\[
+L[f] := \begin{cases}
+Lf &amp; \text{ if } f \in \widetilde{\mathcal{F}}_\Sigma\\
+L[h] \circ L[g] &amp; \text{ if } f = h \circ g\\
+\mathrm{id}_{LX} &amp; \text{ if } f = \mathrm{id}_X
+\end{cases}
+\]</span></p>
+</div>
+<div class="fragment">
+<p><br></p>
+<p><span class="define">Note:</span> this extension is a <em>derived form</em> (i.e.&nbsp;“syntactic sugar”). It does not introduce any new symbols into the grammar.</p>
+<!--
+```{.mathpar}
+\inferrule*[right={[\textsc{S-Obj}]}]
+    {}
+    {}
+\and
+...
+-->
+</div>
+</section>
+<section id="modaltt-8" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="typing-judgments">Typing Judgments</h4>
+<p><span class="math display">\[
+\begin{aligned}
+    \text{Type} &amp; ::= X \text{ type}\\
+    \text{Context} &amp; ::= \Gamma \text{ ctx}\\
+    \text{Term} &amp; ::= \Gamma \vdash s : X\\
+    \text{Protype} &amp; ::= \Gamma_0 ; \Gamma_1 \vdash P \text{ protype}\\
+    \text{Procontext} &amp; ::= \Gamma_0 , \dots , \Gamma_n \vert \Omega \text{ proctx}\\
+    \text{Proterm} &amp; ::= \Gamma_0, \dots, \Gamma_n \vert \Omega \vdash \mu : P
+\end{aligned}
+\]</span></p>
+</section>
+<section id="modaltt-9" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="types">Types</h4>
+<p>A type is (just) an object generated by the signature:</p>
+<p><br></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8" data-scale="3"><pre class="sourceCode numberSource mathpar nostretch number-lines code-with-copy"><code class="sourceCode"><span id="cb8-1"><a href="" aria-label="1"></a>\inferrule*</span>
+<span id="cb8-2"><a href="" aria-label="2"></a>  {X \in \widetilde{\mathcal{T}}_\Sigma}</span>
+<span id="cb8-3"><a href="" aria-label="3"></a>  {X \text{ type}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="modaltt-10" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="term-contexts-grammar">Term Contexts: Grammar</h4>
+<p><span class="math display">\[
+\begin{aligned}
+x &amp;\in \mathrm{Var}_{\mathrm{Type}}\\
+X &amp;\in \widetilde{\mathcal{T}}_\Sigma\\
+\Gamma &amp;\in \mathrm{Context} ::= x : X
+\end{aligned}
+\]</span></p>
+<p><span class="define">Note:</span> our theories are not necessarily cartesian, so our (term) contexts are unary, containing a single variable binding.</p>
+</section>
+<section id="modaltt-11" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="term-contexts-typing-judgment">Term Contexts: Typing Judgment</h4>
+<p><br></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" data-scale="3"><pre class="sourceCode numberSource mathpar nostretch number-lines code-with-copy"><code class="sourceCode"><span id="cb9-1"><a href="" aria-label="1"></a>\inferrule*</span>
+<span id="cb9-2"><a href="" aria-label="2"></a>  {X \text{ type} \\ x \in \mathrm{Var}_\mathrm{Term}}</span>
+<span id="cb9-3"><a href="" aria-label="3"></a>  {x : X \text{ ctx}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="modaltt-12" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="terms-grammar">Terms: Grammar</h4>
+<p><span class="math display">\[
+\begin{aligned}
+x &amp;\in \mathrm{Var}_\mathrm{Term}\\
+f &amp;\in \widetilde{F}_\Sigma\\
+s &amp;\in \mathrm{Term} ::= x \vert f(s)
+\end{aligned}
+\]</span></p>
+</section>
+<section id="modaltt-13" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="terms-typing-judgments">Terms: Typing Judgments</h4>
+<p><br></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource mathpar number-lines code-with-copy"><code class="sourceCode"><span id="cb10-1"><a href="" aria-label="1"></a>\inferrule*</span>
+<span id="cb10-2"><a href="" aria-label="2"></a>  {\strut}</span>
+<span id="cb10-3"><a href="" aria-label="3"></a>  {x : X \vdash x : X}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><br></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource mathpar number-lines code-with-copy"><code class="sourceCode"><span id="cb11-1"><a href="" aria-label="1"></a>\inferrule*</span>
+<span id="cb11-2"><a href="" aria-label="2"></a>  {f \in \widetilde{\mathcal{F}}_\Sigma(X, Y) \\ \Gamma \vdash s : X}</span>
+<span id="cb11-3"><a href="" aria-label="3"></a>  {\Gamma \vdash f(s) : Y}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="modaltt-14" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="terms-arrow-application">Terms: Arrow Application</h4>
+<p>Note that the typing judgements for terms only describe the application <span class="math inline">\(f(s)\)</span> of a <em>basic</em> arrow <span class="math inline">\(f\)</span>.</p>
+<p><br></p>
+<p>As with modal applications, we can extend basic arrow application to all arrows as a derived form:</p>
+<p><span class="math display">\[
+f [\![s]\!] := \begin{cases}
+    f(s) &amp; \text{if } f \in \widetilde{\mathcal{F}}_\Sigma\\
+    h(g(s)) &amp; \text{if } f = h \circ g\\
+    s &amp; \text{if } f = \mathrm{id}_X
+\end{cases}
+\]</span></p>
+</section>
+<section id="modaltt-15" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="terms-substitution">Terms: Substitution</h4>
+<p>Terms are equipped with a meta-theoretic variable substitution, defined in the obvious way:</p>
+<p><span class="math display">\[
+t[s/x] := \begin{cases}
+s &amp; \text{if } t = x\\
+f(t'[s/x]) &amp; \text{if } t = f(t')
+\end{cases}
+\]</span></p>
+<p>(As usual, we assume that <span class="math inline">\(x\)</span> is not a variable in <span class="math inline">\(s\)</span> to avoid variable capture.)</p>
+</section>
+<section id="modaltt-16" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="protypes-grammar">Protypes: Grammar</h4>
+<p><span class="math display">\[
+\begin{aligned}
+s_0, s_1 &amp; \in \mathrm{Term}\\
+P &amp; \in \hat{\mathcal{P}}_\Sigma\\
+\underline{P} &amp;\in \mathrm{Protype} ::= P(s_0, s_1)
+\end{aligned}
+\]</span></p>
+</section>
+<section id="modaltt-17" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="protypes-typing-judgments">Protypes: Typing Judgments</h4>
+<p><br></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode numberSource mathpar number-lines code-with-copy"><code class="sourceCode"><span id="cb12-1"><a href="" aria-label="1"></a>\inferrule*</span>
+<span id="cb12-2"><a href="" aria-label="2"></a>  {P \in \widetilde{\mathcal{P}}_\Sigma(X, Y) \\ \Gamma_0 \vdash s_0 : X \\ \Gamma_1 \vdash s_1 : Y}</span>
+<span id="cb12-3"><a href="" aria-label="3"></a>  {\Gamma_0 ; \Gamma_1 \vdash P(s_0, s_1) \text{ protype}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><br></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode numberSource mathpar number-lines code-with-copy"><code class="sourceCode"><span id="cb13-1"><a href="" aria-label="1"></a>\inferrule*</span>
+<span id="cb13-2"><a href="" aria-label="2"></a>  {\Gamma_0 \vdash s_0 : X \\ \Gamma_1 \vdash s_1 : X}</span>
+<span id="cb13-3"><a href="" aria-label="3"></a>  {\Gamma_0 ; \Gamma_1 \vdash \mathrm{unit}_X(s_0, s_1) \text{ protype}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><br></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode numberSource mathpar number-lines code-with-copy"><code class="sourceCode"><span id="cb14-1"><a href="" aria-label="1"></a>\inferrule*</span>
+<span id="cb14-2"><a href="" aria-label="2"></a>  {\Gamma_0 ; \Gamma_1 \vdash P(s_0, s_1) \text{ protype} \\ \Gamma_1 ; \Gamma_2 \vdash Q(s_1, s_2) \text{ protype} }</span>
+<span id="cb14-3"><a href="" aria-label="3"></a>  {\Gamma_0 ; \Gamma_2 \vdash (P \odot Q)(s_0, s_2) \text{ protype}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="modaltt-18" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="procontexts-grammar">Procontexts: Grammar</h4>
+<p>For <span class="math inline">\(n \geq 0\)</span>: <span class="math display">\[
+\begin{aligned}
+\Gamma_i &amp;\in \mathrm{Context}\\
+\underline{P_i} &amp;\in \mathrm{Protype}\\
+p_i &amp;\in \mathrm{Var}_\mathrm{Proterm}\\
+\overline{\Gamma} \vert \Omega &amp;\in \mathrm{Procontext} ::= \Gamma_0, \dots, \Gamma_n \vert p_1 : \underline{P_1}, \dots, p_n : \underline{P_n}
+\end{aligned}
+\]</span></p>
+<p><br></p>
+<p><span class="define">Note:</span> both components of our procontexts are <em>ordered</em> (in the sense of ordered linear logic).</p>
+</section>
+<section id="modaltt-19" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="procontexts-typing-judgments">Procontexts: Typing Judgments</h4>
+<p><br></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode numberSource mathpar number-lines code-with-copy"><code class="sourceCode"><span id="cb15-1"><a href="" aria-label="1"></a>\inferrule*</span>
+<span id="cb15-2"><a href="" aria-label="2"></a>  {\Gamma \text{ ctx}}</span>
+<span id="cb15-3"><a href="" aria-label="3"></a>  {\Gamma \vert \cdot \text{ proctx}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><br></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode numberSource mathpar number-lines code-with-copy"><code class="sourceCode"><span id="cb16-1"><a href="" aria-label="1"></a>\inferrule*</span>
+<span id="cb16-2"><a href="" aria-label="2"></a>  {\Gamma_0, \dots, \Gamma_n \vert p_1 : P_1(s_0, s_1), \dots, p_n : P_n(s_{n-1}, s_n) \text{ proctx} \\ \Gamma_n ; \Gamma_{n + 1} \vdash P_{n+1}(s_n, s_{n+1}) \text{ protype}}</span>
+<span id="cb16-3"><a href="" aria-label="3"></a>  {\Gamma_0, \dots, \Gamma_{n+1} \vert p_1 : P_1(s_0, s_1), \dots, p_{n+1} : P_{n+1}(s_n, s_{n+1}) \text{ proctx}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="modaltt-20" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="proterms-grammar">Proterms: Grammar</h4>
+<p><span class="math display">\[
+\begin{aligned}
+p_i &amp;\in \mathrm{Var}_\mathrm{Proterm}\\
+f, g &amp;\in \hat{\mathcal{F}}_\Sigma \\
+s_i &amp;\in \mathrm{Term} \\
+\alpha &amp;\in \hat{C}_\Sigma(P_1, \dots, P_n \Rightarrow Q \vert f \to g)\\
+\mu &amp;\in \mathrm{Proterm} \\
+&amp;::= p \\
+&amp;\hspace{0.5em}\vert \alpha \langle s_0, \dots, s_n \rangle (\mu_1, \dots, \mu_n) \\
+&amp;\hspace{0.5em}\vert \mu_1 \odot \mu_2\\
+&amp;\hspace{0.5em}\vert \text{let } [p_1 : \underline{P_1}, p_2 : \underline{P_2}] = \mu_1 \text{ in } \mu_2\\
+\end{aligned}
+\]</span></p>
+</section>
+<section id="modaltt-21" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="proterms-typing-judgments">Proterms: Typing Judgments</h4>
+<p><br></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode numberSource mathpar number-lines code-with-copy"><code class="sourceCode"><span id="cb17-1"><a href="" aria-label="1"></a>\inferrule*</span>
+<span id="cb17-2"><a href="" aria-label="2"></a>  {\strut}</span>
+<span id="cb17-3"><a href="" aria-label="3"></a>  {\overline{\Gamma} \vert p : \underline{P} \vdash p : \underline{P} }</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><br></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode numberSource mathpar number-lines code-with-copy"><code class="sourceCode"><span id="cb18-1"><a href="" aria-label="1"></a>\inferrule*</span>
+<span id="cb18-2"><a href="" aria-label="2"></a>  {\overline{\Gamma}_i \vert \Omega_i \vdash \mu_i : P_i(s_{i-1}, s_i) \\ \alpha \in \widetilde{\mathcal{C}}_\Sigma(P_1, \dots, P_n \Rightarrow Q \vert f \to g) \\ i = 1, \dots, n}</span>
+<span id="cb18-3"><a href="" aria-label="3"></a>  {\overline{\Gamma}_1, \dots, \overline{\Gamma}_n \vert \Omega_1, \dots, \Omega_n \vdash \alpha(s_0, \dots, s_n)\{\mu_1, \dots, \mu_n\} : Q(f [\![ s_0 ]\!], g [\![s_n]\!] )}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><br></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode numberSource mathpar number-lines code-with-copy"><code class="sourceCode"><span id="cb19-1"><a href="" aria-label="1"></a>\inferrule*</span>
+<span id="cb19-2"><a href="" aria-label="2"></a>  {\overline{\Gamma}_1 \vert \Omega_1 \vdash \mu_1 : P_1(s_0, s_1) \\ \overline{\Gamma}_2 \vert \Omega_2 \vdash \mu_2 : P_2(s_1, s_2)}</span>
+<span id="cb19-3"><a href="" aria-label="3"></a>  {\overline{\Gamma}_1, \overline{\Gamma}_2 \vert \Omega_1, \Omega_2 \vdash \mu_1 \odot \mu_2 : (P_1 \odot P_2)(s_0, s_2)}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><br></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode numberSource mathpar number-lines code-with-copy"><code class="sourceCode"><span id="cb20-1"><a href="" aria-label="1"></a>\inferrule*</span>
+<span id="cb20-2"><a href="" aria-label="2"></a>  {\overline{\Gamma} \vert \Omega \vdash \epsilon : (P_1 \odot P_2) (s_0, s_2) \\ \overline{\Gamma}_L, x_0 : X_0, x_1 : X_1, x_2 : X_2, \overline{\Gamma}_R \vert \Omega_L, p_1 : P_1(x_0, x_1), p_2 : P_2(x_1, x_2), \Omega_R \vdash \mu : Q(t_0, t_1)}</span>
+<span id="cb20-3"><a href="" aria-label="3"></a>  {\overline{\Gamma}_L, \overline{\Gamma}, \overline{\Gamma}_R \vert \Omega_L, \Omega, \Omega_R \vdash \text{let } (p_1 : P_1(x_0, x_1), p_2 : P_2(x_1, x_2) = \epsilon) \text{ in } \mu : Q(t_0[s_0/x_0], t_1[s_2/x_2])}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="modaltt-22" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="vdc-semantics">VDC Semantics</h4>
+<p>We define a modal, fibrational VDC (with composites) <span class="math inline">\([\![ \mathbb{T}_\Sigma ]\!]\)</span> as follows:</p>
+<div class="fragment">
+<ul>
+<li>Objects are term contexts <span class="math inline">\(\Gamma = (x : X)\)</span> (these are effectively just types annotated with a variable).</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Tight morphisms <span class="math inline">\((x : X) \to (y : Y)\)</span> are terms <span class="math inline">\((x : X) \vdash s : Y.\)</span></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Proarrows <span class="math inline">\((x : X) \nrightarrow (y : Y)\)</span> are protypes <span class="math display">\[
+(x : X) ; (y : Y) \vdash P(s, t).
+\]</span></li>
+</ul>
+</div>
+</section>
+<section id="modaltt-23" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="vdc-semantics-1">VDC Semantics</h4>
+<ul>
+<li>Cells</li>
+</ul>
+<div class="tikzcd">
+<script type="text/tikz">
+\begin{tikzcd}[ampersand replacement=\&]
+    {\Gamma_0} \& {\Gamma_1} \& \cdots \& {\Gamma_{n-1}} \& {\Gamma_n} \\
+    {(y_0 : Y_0)} \&\&\&\& {(y_n : Y_n)}
+    \arrow["{P_1(s_0,s_1)}"{inner sep=.8ex}, "\shortmid"{marking}, from=1-1, to=1-2]
+    \arrow["f_0"', from=1-1, to=2-1]
+    \arrow["\shortmid"{marking}, from=1-2, to=1-3]
+    \arrow["\shortmid"{marking}, from=1-3, to=1-4]
+    \arrow["{P_n(s_{n-1},s_n)}"{inner sep=.8ex}, "\shortmid"{marking}, from=1-4, to=1-5]
+    \arrow["f_n", from=1-5, to=2-5]
+    \arrow[""{name=0, anchor=center, inner sep=0}, "{Q(t_0,t_n)}"'{inner sep=.8ex}, "\shortmid"{marking}, from=2-1, to=2-5]
+    \arrow["\mu"{description}, draw=none, from=1-3, to=0]
+\end{tikzcd}
+</script>
+</div>
+<p>are proterms <span class="math display">\[
+\begin{aligned}
+\Gamma_0, \dots, \Gamma_n \vert p_1 : P_1(s_0, s_1), \dots, p_n : P_n(s_{n-1}, s_n) \vdash\\
+\mu : Q(t_0[f_0(s_0)/y_0], t_n[f_n(s_n)/y_n]).
+\end{aligned}
+\]</span></p>
+</section>
+<section id="modaltt-24" class="slide level2">
+<h2>ModalTT</h2>
+<h4 id="vdc-semantics-2">VDC Semantics</h4>
+<ul>
+<li>Restriction cells are obtained via term substitution: <span class="math display">\[
+x_0 : X_0, x_1 : X_1 \vert p : P(f_0(x_0), f_1(x_1)) \vdash p : P(f_0(x_0), f_1(x_1))
+\]</span></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Loose composition is precisely <span class="math inline">\(\odot\)</span>-introduction on protypes and proterms, with the universal property supplied by <span class="math inline">\(\odot\)</span>-elimination along with the <span class="math inline">\(\beta\)</span>/<span class="math inline">\(\eta\)</span>-computation rules (not shown).</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Each modality symbol <span class="math inline">\(L \in \mathcal{M}_\Sigma\)</span> corresponds to a monad on <span class="math inline">\([\![\mathbb{T}_\Sigma]\!]\)</span> via the derived form <span class="math inline">\(L[-]\)</span> and the primitive structure morphisms/cells <span class="math inline">\(\eta\)</span> and <span class="math inline">\(\mu\)</span>. Functoriality is immediate from the normal form.</li>
+</ul>
+</div>
+</section>
+<section id="future-work" class="slide level2">
+<h2>Future work</h2>
+<ul>
+<li>Typing judgments for loose units are subtle and not fully developed (hence their omission). As currently implemented, they lack a normal form.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>The expected metatheorems (cut elimination, soundness of the VDC semantics, etc.) need to be proven more carefully.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>The surface syntax is cumbersome and not especially user-friendly.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>The internal representation still needs to be hooked up to CatColab so that the DSL can actually be used alongside DoubleTT models.</li>
+</ul>
+</div>
+</section>
+<section>
+<section id="thanks-for-listening" class="title-slide slide level1 close-slide center">
+<h1>Thanks for listening!</h1>
+<hr class="break">
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/topos_logo.png" class="quarto-figure quarto-figure-center" height="90"></p>
+</figure>
+</div>
+<aside class="notes">
+<p>(Leave this slide up during Q&amp;A.)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="references" class="slide level2">
+<h2>References</h2>
+<div class="reading">
+<!--
+TODO!
+-->
+<ul>
+<li><p>E. Patterson. <em>DoubleTT</em>. Topos Institute CatColab RFCs. <a href="https://next.catcolab.org/rfc/0002#mathematical-specification">https://next.catcolab.org/rfc/0002#mathematical-specification</a></p></li>
+<li><p>H. Nasu. <em>An Internal Logic of Virtual Double Categories</em>. arXiv preprint (2026). <a href="https://arxiv.org/pdf/2410.06792">https://arxiv.org/pdf/2410.06792</a></p></li>
+<li><p>L. Petersen, R. Harper, K. Crary &amp; F. Pfenning. <em>A Type Theory for Memory Allocation and Data Layout</em>. Association for Computing Machinery 38 (2003), 172-184. <a href="https://www.cs.cmu.edu/~rwh/papers/ordered/popl.pdf">https://www.cs.cmu.edu/~rwh/papers/ordered/popl.pdf</a></p></li>
+<li><p>R. J. Simmons, <em>Lecture Notes on Ordered Logic</em>. Course notes, Carnegie Mellon University. <a href="https://www.cs.cmu.edu/~fp/courses/15816-s12/lectures/15-ordered.pdf">https://www.cs.cmu.edu/~fp/courses/15816-s12/lectures/15-ordered.pdf</a></p></li>
+<li><p>J. Polakow &amp; F. Pfenning, <em>Ordered linear logic and applications</em>. PhD Thesis, Carnegie Mellon University. <a href="https://dl.acm.org/doi/10.5555/935673">https://dl.acm.org/doi/10.5555/935673</a></p></li>
+<li><p>K. Carlson, <em>Introducing CatColab</em>. Topos Institute blog, October 2024. <a href="https://topos.institute/blog/2024-10-02-introducing-catcolab/">topos.institute/blog/2024-10-02-introducing-catcolab</a></p></li>
+<li><p>M. Lambert &amp; E. Patterson, <em>Cartesian double theories: a double-categorical framework for categorical doctrines</em>. Advances in Mathematics 444 (2024), 109630. <a href="https://arxiv.org/abs/2310.05384">arXiv:2310.05384</a></p></li>
+</ul>
+</div>
+<aside class="notes">
+<p>Backup slide for Q&amp;A.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="figures/topos_icon.png" class="slide-logo"></p>
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="modaltt_slides_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="modaltt_slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="modaltt_slides_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="modaltt_slides_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="modaltt_slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="modaltt_slides_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="modaltt_slides_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="modaltt_slides_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="modaltt_slides_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="modaltt_slides_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // target, if specified
+                link.setAttribute("target", "_blank");
+                if (link.getAttribute("rel") === null) {
+                  link.setAttribute("rel", "noopener");
+                }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
