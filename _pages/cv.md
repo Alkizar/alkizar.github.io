@@ -22,13 +22,14 @@ Work Experience
 ======
 * Research Associate (June 2026 - Present)
   * <a href="https://topos.institute/">Topos Institute</a>
-  * Developed a DSL for use in <a href="https://topos.institute/work/catcolab/">CatColab</a>'s categorical logic package, which facilitates the implementation of general modal double theories. [TODO]-link to repo once public
+  * Developed a DSL for specifying modal virtual double theories, for use in <a href="https://topos.institute/work/catcolab/">CatColab</a>'s DoubleTT component. [TODO]-link to repo once public
+  * Designed an accompanying type theory and operational semantics for modal VDCs. [TODO]-link to preprint once available
   * Supervised by Evan Patterson
 
 * Student Assistant (Summer 2024)
   * San Francisco State University
   * Duties included: Writing course notes (code and exposition) for mechanistic interpretability seminar
-  * Advised by Prof. Daniel Huang
+  * Supervised by Prof. Daniel Huang
 
 * Course Reader (Fall 2023)
   * UC Berkeley
@@ -38,7 +39,7 @@ Work Experience
 * Undergraduate Research Fellow (Summer 2022)
   * University of Chicago
   * Duties included: Conducting research in stable homotopy theory and category theory; see <a href="https://alkizar.github.io/project/graded_monoidal_categories">my senior thesis</a>
-  * Advised by Prof. J. Peter May
+  * Supervised by Prof. J. Peter May
 
 * Course Reader (Fall 2019)
   * UC Berkeley, Fall Program for Freshmen
