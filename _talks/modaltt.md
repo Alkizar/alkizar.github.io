@@ -19,7 +19,7 @@ CatColab's DoubleTT module uses virtual double theories to parameterize logics, 
 <iframe src="https://alkizar.github.io/files/slides/modaltt_slides/modaltt_slides.html" width="100%" height="500px" title="ModalTT: A Type Theory for Modal Virtual Double Theories"></iframe>
 
 <embed class='hide-on-mobile' src= 'https://alkizar.github.io/files/slides/modaltt.pdf' type='application/pdf' width="680" height="840">
-<a href='https://alkizar.github.io/files/slides/modaltt.pdf'>Download Slides</a>
+<a href='https://alkizar.github.io/files/slides/modaltt_slides/modaltt.pdf'>Download Slides (PDF)</a>
 
 <style>
 @media screen and (max-width: 568px) {
