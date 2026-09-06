@@ -9,13 +9,31 @@ local system = require 'pandoc.system'
 local utils = require 'pandoc.utils'
 local stringify = utils.stringify
 
+local function first_line(s)
+  return (s or ''):match('^[^\r\n]+') or ''
+end
+
 local function which(name)
   local ok, result = pcall(pandoc.pipe, 'which', {name}, '')
   if ok then
-    local p = result:gsub('%s+$', '')
+    local p = first_line(result):gsub('%s+$', '')
     if p ~= '' then return p end
   end
-  local home = os.getenv 'HOME' or ''
+
+  -- Windows: `where` returns one or more full paths
+  ok, result = pcall(pandoc.pipe, 'where', {name}, '')
+  if ok then
+    local p = first_line(result):gsub('%s+$', '')
+    if p ~= '' then return p end
+  end
+  ok, result = pcall(pandoc.pipe, 'where.exe', {name}, '')
+  if ok then
+    local p = first_line(result):gsub('%s+$', '')
+    if p ~= '' then return p end
+  end
+
+  local home = os.getenv 'HOME' or os.getenv 'USERPROFILE' or ''
+  local localapp = os.getenv 'LOCALAPPDATA' or ''
   local extra = {
     home .. '/Library/TinyTeX/bin/universal-darwin/' .. name,
     home .. '/Library/TinyTeX/bin/aarch64-darwin/' .. name,
@@ -24,6 +42,9 @@ local function which(name)
     '/opt/homebrew/bin/' .. name,
     '/usr/local/bin/' .. name,
     '/Applications/Inkscape.app/Contents/MacOS/' .. name,
+    localapp .. '\\Programs\\MiKTeX\\miktex\\bin\\x64\\' .. name .. '.exe',
+    localapp .. '\\Programs\\MiKTeX\\miktex\\bin\\x64\\' .. name,
+    home .. '\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\' .. name .. '.exe',
   }
   for _, candidate in ipairs(extra) do
     local fh = io.open(candidate, 'r')
@@ -65,7 +86,30 @@ local function extra_preamble(meta, kind)
   if type(extra) ~= 'string' then
     extra = stringify(extra)
   end
-  return extra
+
+  local parts = {}
+  if extra ~= '' then
+    table.insert(parts, extra)
+  end
+
+  -- Shared Quarto meta: tikz-preamble-file: _macros.qmd
+  local preamble_file = meta['tikz-preamble-file']
+  if preamble_file then
+    local path = stringify(preamble_file)
+    local contents = read_file(path)
+    if contents and contents ~= '' then
+      table.insert(parts, contents)
+    else
+      io.stderr:write('tikzcd.lua: could not read tikz-preamble-file: ' .. path .. '\n')
+    end
+  end
+
+  -- Prefer local quiver.sty when present (common for q.uiver.app exports)
+  if read_file('quiver.sty') then
+    table.insert(parts, '\\usepackage{quiver}')
+  end
+
+  return table.concat(parts, '\n')
 end
 
 local function zoom_from(meta, attribs, kind)
@@ -95,6 +139,12 @@ end
 
 local function as_tikzcd(src)
   if src:match '\\begin%s*{tikzcd}' then
+    local begins, ends = 0, 0
+    for _ in src:gmatch '\\begin%s*{tikzcd}' do begins = begins + 1 end
+    for _ in src:gmatch '\\end%s*{tikzcd}' do ends = ends + 1 end
+    if begins > ends then
+      return src .. string.rep('\n\\end{tikzcd}', begins - ends)
+    end
     return src
   end
   return '\\begin{tikzcd}\n' .. src .. '\n\\end{tikzcd}'
@@ -134,11 +184,21 @@ local function wrap_tex(kind, src, preamble)
 end
 
 local function compile_svg(kind, src, preamble, zoom)
+  local project_dir = pandoc.system.get_working_directory()
   return system.with_temporary_directory(kind, function(tmpdir)
     return system.with_working_directory(tmpdir, function()
       local tex_file = 'diagram.tex'
       local dvi_file = 'diagram.dvi'
       local svg_file = 'diagram.svg'
+
+      -- Local packages (e.g. quiver.sty) live next to the Quarto doc
+      local quiver = read_file(project_dir .. '/quiver.sty')
+        or read_file(project_dir .. '\\quiver.sty')
+        or read_file('quiver.sty')
+      if quiver then
+        write_file('quiver.sty', quiver)
+      end
+
       write_file(tex_file, wrap_tex(kind, src, preamble))
 
       local ok, result = pcall(
@@ -203,6 +263,9 @@ return {
     Pandoc = function(doc)
       local use_local = latex_bin and dvisvgm_bin
       if not use_local then
+        if not latex_bin then
+          io.stderr:write('!!\n')
+        end
         if html_format then
           io.stderr:write(
             'tikzcd.lua: latex/dvisvgm not found; TikZJax fallback is tikzcd-only\n'

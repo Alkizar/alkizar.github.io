@@ -1,0 +1,1 @@
+\newcommand{\proto}{\mathrel{\mkern3mu\vcenter{\hbox{$\scriptstyle+$}}\mkern-13mu{\to}}}

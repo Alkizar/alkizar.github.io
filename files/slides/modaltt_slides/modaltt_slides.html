@@ -171,12 +171,9 @@ Bryce Goldman
 <section>
 <section id="introduction" class="title-slide slide level1 center">
 <h1>Introduction</h1>
-<p><span class="math display">\[
-  % https://tex.stackexchange.com/a/269194
-  \newcommand{\proto}{\mathrel{\mkern3mu\vcenter{\hbox{$\scriptstyle+$}}\mkern-13mu{\to}}}
-\]</span> <!--
+<!--
 ETA: 3 minutes
---></p>
+-->
 <!--
 Abstract:
 CatColab's DoubleTT module uses virtual double theories to parameterize logics, which determine a type theory on models. These theories are currently hard-coded in CatColab's backend, and their specification is not exposed directly to the user. This talk introduces an implementation of a user-facing DSL for specifying custom (modal) virtual double theories. This language is backed by a type theory for virtual double categories (VDCs), inspired by prior work by Hayato Nasu on an internal language of VDCs. We propose a handful of modifications to Nasu's type theory, which integrate support for double monads, expose the innate resource-sensitivity and order-sensitivity of the internal logic, and better facilitate a translation into software.
@@ -279,7 +276,7 @@ ETA: 3 minutes
 <!--
 ETA: 1 minute
 -->
-<p><span class="define">Example:</span> the theory of <b>promonads</b> is a unital VDC with an object <span class="math inline">\(X\)</span>, a proarrow <span class="math inline">\(P : X \proto X\)</span> such that the loose composite <span class="math inline">\(P \odot P\)</span> is defined and is equal to <span class="math inline">\(P\)</span>, and a virtual cell <span class="math inline">\(\theta\)</span>:</p>
+<p><span class="define">Example:</span> the theory of <b>promonads</b> is a unital VDC with an object <span class="math inline">\(X\)</span>, a proarrow <span class="math inline">\(P : X \mathrel{\mkern 3mu\vcenter{\hbox{$\scriptstyle+$}}\mkern-13mu{\to}}X\)</span> such that the loose composite <span class="math inline">\(P \odot P\)</span> is defined and is equal to <span class="math inline">\(P\)</span>, and a virtual cell <span class="math inline">\(\theta\)</span>:</p>
 <p><img data-src="modaltt_slides_files/mediabag/57cc4f5490d5d8145ad5a4aa451939724bd3f002.svg" class="tikzcd"></p>
 <div class="fragment">
 <p>such that the cell equalities below are satisfied:</p>
@@ -385,17 +382,17 @@ ETA: 1 minute (speedrun this slide a little)
 <tr class="even">
 <td><span class="define">Proarrow</span></td>
 <td>Protype</td>
-<td><span class="math inline">\(P :\Gamma \proto \Delta \Leftrightarrow \Gamma ; \Delta \vdash P(s ; t) \text{ protype}\)</span></td>
+<td><span class="math inline">\(P :\Gamma \mathrel{\mkern 3mu\vcenter{\hbox{$\scriptstyle+$}}\mkern-13mu{\to}}\Delta \Leftrightarrow \Gamma ; \Delta \vdash P(s ; t) \text{ protype}\)</span></td>
 </tr>
 <tr class="odd">
 <td><span class="define">Proarrow path</span></td>
 <td>Procontext</td>
-<td><span class="math inline">\(\Gamma_0 \proto \Gamma_1 \proto \cdots \proto \Gamma_n \Leftrightarrow \rho_1 : P_1, \dots, \rho_n : P_n \text{ proctx}\)</span></td>
+<td><span class="math inline">\(\Gamma_0 \mathrel{\mkern 3mu\vcenter{\hbox{$\scriptstyle+$}}\mkern-13mu{\to}}\Gamma_1 \mathrel{\mkern 3mu\vcenter{\hbox{$\scriptstyle+$}}\mkern-13mu{\to}}\cdots \mathrel{\mkern 3mu\vcenter{\hbox{$\scriptstyle+$}}\mkern-13mu{\to}}\Gamma_n \Leftrightarrow \rho_1 : P_1, \dots, \rho_n : P_n \text{ proctx}\)</span></td>
 </tr>
 <tr class="even">
 <td><span class="define">(Globular) Cell</span></td>
 <td>Proterm</td>
-<td><span class="math inline">\(\mu : P_1, \dots, P_n \proto Q \Leftrightarrow \Gamma_0 ; \dots ; \Gamma_n \vert \rho_1 : P_1, \dots, \rho_n : P_n \vdash \mu : Q\)</span></td>
+<td><span class="math inline">\(\mu : P_1, \dots, P_n \mathrel{\mkern 3mu\vcenter{\hbox{$\scriptstyle+$}}\mkern-13mu{\to}}Q \Leftrightarrow \Gamma_0 ; \dots ; \Gamma_n \vert \rho_1 : P_1, \dots, \rho_n : P_n \vdash \mu : Q\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -439,7 +436,7 @@ NONESSENTIAL
 -->
 <h4 id="restrictions">Restrictions</h4>
 <p>For this type theory to model the internal language of <strong>fibrational</strong> VDCs it needs to capture restriction cells and their universal property.</p>
-<p>Given a proarrow <span class="math inline">\(P : Y_0 \proto Y_1\)</span> and tight morphisms <span class="math inline">\(f_i : X_i \to Y_i\)</span>, the protype <span class="math display">\[
+<p>Given a proarrow <span class="math inline">\(P : Y_0 \mathrel{\mkern 3mu\vcenter{\hbox{$\scriptstyle+$}}\mkern-13mu{\to}}Y_1\)</span> and tight morphisms <span class="math inline">\(f_i : X_i \to Y_i\)</span>, the protype <span class="math display">\[
 x_0 : X_0 ; x_1 : X_1 \vdash P(f_0(x_0), f_1(x_1))
 \]</span> represents the restriction of <span class="math inline">\(P\)</span> along <span class="math inline">\(f_0\)</span> and <span class="math inline">\(f_1\)</span>.</p>
 </section>
@@ -810,7 +807,7 @@ s_i &amp;\in \mathrm{Term} \\
 </div>
 <div class="fragment">
 <ul>
-<li>Proarrows <span class="math inline">\((x : X) \proto (y : Y)\)</span> are protypes <span class="math display">\[
+<li>Proarrows <span class="math inline">\((x : X) \mathrel{\mkern 3mu\vcenter{\hbox{$\scriptstyle+$}}\mkern-13mu{\to}}(y : Y)\)</span> are protypes <span class="math display">\[
 (x : X) ; (y : Y) \vdash P(s, t).
 \]</span></li>
 </ul>

@@ -15,23 +15,18 @@ format:
     logo: figures/topos_icon.png
     slide-number: c
     link-external-newwindow: true
-    include-in-header: fonts.html
-    include-after-body: video-slots.html
     html-math-method: mathjax
 filters:
   - tikzcd.lua
 bibliography: references.bib
 csl: aims-mathematics.csl
+tikz-preamble-file: _macros.qmd
 nocite: |
   @*
 ---
 
-
 # Introduction
-$$
-  % https://tex.stackexchange.com/a/269194
-  \newcommand{\proto}{\mathrel{\mkern3mu\vcenter{\hbox{$\scriptstyle+$}}\mkern-13mu{\to}}}
-$$
+{{< include _macros.qmd >}}
 <!--
 ETA: 3 minutes
 -->
