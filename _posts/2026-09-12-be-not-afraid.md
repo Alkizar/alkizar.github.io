@@ -1,0 +1,7 @@
+---
+title: 'Be Not Afraid'
+date: 2026-09-12
+permalink: /posts/2026/09/be-not-afraid/
+---
+
+Welcome to my blog! I will be occasionally uploading my musings here, you have been warned.
