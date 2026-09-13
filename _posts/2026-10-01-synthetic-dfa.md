@@ -1,6 +1,6 @@
 ---
 title: 'A Synthetic Description of Monotone Dataflow'
-date: 2026-06-28
+date: 2026-10-01
 permalink: /posts/2026/10/synthetic-dfa/
 tags:
   - compilers

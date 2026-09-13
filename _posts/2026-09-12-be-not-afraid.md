@@ -4,4 +4,6 @@ date: 2026-09-12
 permalink: /posts/2026/09/be-not-afraid/
 ---
 
-Welcome to my blog! I will be occasionally uploading my musings here, you have been warned.
+Welcome to my blog! 
+
+I will be occasionally uploading my musings here. You have been warned.
