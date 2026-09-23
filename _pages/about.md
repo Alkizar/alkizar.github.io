@@ -7,8 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-I am a research software developer working in applied category theory, compilers, and formal methods. I completed my M.S. in computer science at Stanford University in 2026, and my B.A. in mathematics at UC Berkeley in 2023. I am broadly interested in categorical logic, programming languages, type theory, and automated reasoning; in my free time I also play (and judge) Magic the Gathering competitively, write mediocre poetry about my experiences on public transportation, and practice lockpicking (see <a href="https://alkizar.github.io/misc/">my miscellany</a>).
+I am a computer scientist, research software engineer, and applied mathematician. I hold an MSc in Computer Science (with a concentration in software theory) from Stanford University, and a BA in Mathematics from UC Berkeley. My interests lie primarily in programming languages, formal verification, compilers, and categorical logic. In my free time I also play (and judge) Magic the Gathering competitively, write mediocre poetry about my experiences on public transit, and practice lockpicking (see <a href="https://alkizar.github.io/misc/">my miscellany</a>).
 
+Currently I am a research associate at the <a href='https://topos.institute/'>Topos Institute</a> in Berkeley, where I am working on a type theory, formal semantics, and DSL for specifying modal virtual double theories. When I have time (and am less preoccupied with PhD applications) I have also been tinkering with writing a Lean library for double category theory and writing my own SMT solver from scratch.
+
+<!--
 Current Work
 ======
 
@@ -27,7 +30,6 @@ Type Set Specialization
 
 Type set specialization is an extension of the Lambda Set Specialization (LSS) algorithm for terms of arbitrary types which I spent some time collaborating with <a href='https://benjamindriscoll.com/'>Ben Driscoll</a> on during my time at Stanford. The idea behind this generalization is a kind of extra-juiced constant propagation at the type level, to expose type-theoretic optimizations to the compiler using the same mechanism as LSS.
 
-<!--
 **Markdown generator**
 
 The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
