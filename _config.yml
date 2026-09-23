@@ -25,7 +25,7 @@ author:
   avatar           : "profile.PNG"
   name             : "Bryce Goldman"
   pronouns         : "he/him" # example: "she/her"  
-  bio              : "Research software engineer interested in compilers, formal methods, and category theory."
+  bio              : "Computer scientist and research software engineer interested in programming languages, formal methods, and category theory."
   location         : "San Francisco Bay Area"
   employer         : #"Stanford University"
   uri              : #https://profiles.stanford.edu/bryce-goldman
