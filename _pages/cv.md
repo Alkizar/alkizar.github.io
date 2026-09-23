@@ -28,7 +28,7 @@ Research Experience
 * Undergraduate Research Fellow, University of Chicago (Summer 2022)
   * Advised by J. Peter May
   * Conducted novel research in category theory, leading to the development of a theoretical framework for internalizing graded external monoidal products which unifies a number of constructions in stable homotopy theory (see <a href="https://alkizar.github.io/project/graded_monoidal_categories">Graded Monoidal Categories and Internalization</a>).
-  * Used this framework to derive a common derivation for Day convolution and the smash product of S-modules and recover formal properties of both products syntactically.
+  * Used this framework to derive a common construction of both Day convolution and the smash product of S-modules, and recover formal properties of both products syntactically.
   
 Teaching
 ======
