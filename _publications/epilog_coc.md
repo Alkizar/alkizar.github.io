@@ -4,7 +4,6 @@ collection: publications
 category: software
 permalink: /project/epilog_coc
 excerpt: 'An implementation of the calculus of constructions as a logic program'
-paperurl: 'https://github.com/Alkizar/epilog-coc'
 ---
 
 A basic proof assistant based on the calculus of constructions, supporting universe polymorphism and (dependent) inductive types, built entirely in the logic programming language <a href='http://epilog.stanford.edu/homepage/index.php'>Epilog</a>. The primary advantage to this implementation is that the backend leverages the native term unification capabilities of Epilog to solve for universe metavariables. The frontend is just a primitive web interface for the typechecker. 
