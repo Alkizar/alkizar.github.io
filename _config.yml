@@ -28,7 +28,7 @@ author:
   bio              : "Computer scientist interested in programming languages, formal methods, and category theory."
   location         : "San Francisco Bay Area"
   employer         : #"Stanford University"
-  uri              : https://topos.institute/people/bryce-goldman/
+  uri              : #https://profiles.stanford.edu/bryce-goldman
   email            : "bryceggoldman@gmail.com" 
 
   # Academic websites

@@ -3,12 +3,12 @@ title: "Graded Monoidal Categories and Internalization"
 collection: publications
 category: papers
 permalink: /project/graded_monoidal_categories
-excerpt: 'A general categorical framework for transforming graded monoidal products into classical "internal" monoidal products.'
+excerpt: 'A general categorical framework for internalizing graded monoidal products into classical monoidal products.'
 paperurl: 'https://alkizar.github.io/files/Graded_Monoidal_Categories.pdf'
 date: 2022-01-01
 ---
 
-In this paper, which began as my [University of Chicago REU (2022)](https://math.uchicago.edu/~may/REU2022/) project and later also became my undergraduate thesis, I establish a general categorical framework for transforming graded monoidal products into classical "internal" monoidal products. This makes the analogy between [Day convolution](https://ncatlab.org/nlab/show/Day+convolution) and the [smash product](https://ncatlab.org/nlab/show/symmetric+smash+product+of+spectra) of [S-modules](https://ncatlab.org/nlab/show/S-module) formal, as they are both manifestations of "internalized" graded monoidal products, and allows properties of these products to be derived purely syntactically.
+In this paper, which began as my [University of Chicago REU (2022)](https://math.uchicago.edu/~may/REU2022/) project and later became my undergraduate thesis, I establish a general categorical framework for transforming "external" graded monoidal products into classical "internal" monoidal products. This makes an analogy between the constructions of [Day convolution](https://ncatlab.org/nlab/show/Day+convolution) and the [smash product](https://ncatlab.org/nlab/show/symmetric+smash+product+of+spectra) of [S-modules](https://ncatlab.org/nlab/show/S-module) formal, as they are both manifestations of internalized graded monoidal products, allowing properties of these products to be recovered via abstract nonsense.
 
 <embed class='hide-on-mobile' src= "https://alkizar.github.io/files/Graded_Monoidal_Categories.pdf" type='application/pdf' width="680" height="840">
 <a href='https://alkizar.github.io/files/Graded_Monoidal_Categories.pdf'>Download Paper</a>
