@@ -9,7 +9,7 @@ redirect_from:
 
 I am a computer scientist, research software engineer, and applied mathematician. I hold an MSc in Computer Science (with a concentration in software theory) from Stanford University, and a BA in Mathematics from UC Berkeley. My interests lie primarily in programming languages, formal verification, compilers, and categorical logic. In my free time I also play (and judge) Magic the Gathering competitively, write mediocre poetry about my experiences on public transit, and practice lockpicking (see <a href="https://alkizar.github.io/misc/">my miscellany</a>).
 
-Currently I am a research associate at the <a href='https://topos.institute/'>Topos Institute</a> in Berkeley, where I am working on a type theory, formal semantics, and DSL for specifying modal virtual double theories. When I have time (and am less preoccupied with PhD applications) I have also been tinkering with writing a Lean library for double category theory and writing my own SMT solver from scratch.
+Currently I am a research associate at <a href='https://topos.institute/'>Topos Institute</a> in Berkeley, where I am working on a type theory, formal semantics, and DSL for specifying modal virtual double theories. When I have time (and am less preoccupied with PhD applications) I have also been tinkering with writing a Lean library for double category theory and writing my own SMT solver from scratch.
 
 <!--
 Current Work

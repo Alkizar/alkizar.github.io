@@ -13,51 +13,26 @@ redirect_from:
 
 Education
 ======
-* M.S. in Computer Science, Stanford University (2026)
-  * Relevant Coursework: Domain-Specific Languages, Program Analysis and Compiler Optimizations, Programming Languages, Automated Reasoning
-* B.A. in Mathematics, UC Berkeley (2023)
-  * Honors: Highest honors in mathematics and general scholarship, Recipient of the <a href="https://math.berkeley.edu/about/honors-awards/dorothea-klumpke-roberts-prize">Dorothea Klumpke Roberts prize</a>
+* MSc in Computer Science, Stanford University (Fall 2024 -- Spring 2026)
+  * Relevant Coursework: domain-specific languages, program analysis and compiler optimizations, programming languages, automated reasoning, computational logic
+* BA in Mathematics, UC Berkeley (Fall 2019 -- Spring 2023)
+  * Honors: highest honors in mathematics and general scholarship, recipient of the <a href="https://math.berkeley.edu/about/honors-awards/dorothea-klumpke-roberts-prize">Dorothea Klumpke Roberts prize</a>, Phi Beta Kappa
 
-Work Experience
+Research Experience
 ======
-* Research Associate (June 2026 - Present)
-  * <a href="https://topos.institute/">Topos Institute</a>
-  * Developed a DSL for specifying modal virtual double theories, for use in <a href="https://topos.institute/work/catcolab/">CatColab</a>'s DoubleTT component.
-  * Designed an accompanying type theory and formal semantics for modal VDCs. [TODO]-link to preprint once available
-  * Supervised by Evan Patterson
+* Research Associate, <a href="https://topos.institute/">Topos Institute</a> (June 2026 - Present)
+  * Advised by Evan Patterson
+  * Designed and implemented a DSL for specifying modal virtual double theories, extending Catcolab's type-theoretic modeling module with custom categorical logics.
+  * Developed an accompanying type theory and formal semantics for fibrational modal VDCs as multicategorical algebraic theories.
 
-* Student Assistant (Summer 2024)
-  * San Francisco State University
-  * Duties included: Writing course notes (code and exposition) for mechanistic interpretability seminar
-  * Supervised by Prof. Daniel Huang
-
-* Course Reader (Fall 2023)
-  * UC Berkeley
-  * Duties included: Grading student assignments for courses in mathematical logic, computability theory, and algebraic topology
-  * Supervised by Prof. Antonio Montalban and Prof. John Lott
-
-* Undergraduate Research Fellow (Summer 2022)
-  * University of Chicago
-  * Duties included: Conducting research in stable homotopy theory and category theory; see <a href="https://alkizar.github.io/project/graded_monoidal_categories">my senior thesis</a>
-  * Supervised by Prof. J. Peter May
-
-* Course Reader (Fall 2019)
-  * UC Berkeley, Fall Program for Freshmen
-  * Duties included: Grading student assignments for courses in calculus
-  * Supervised by Derrick Smith
+* Undergraduate Research Fellow, University of Chicago (Summer 2022)
+  * Advised by J. Peter May
+  * Conducted novel research in category theory, leading to the development of a theoretical framework for internalizing graded external monoidal products which unifies a number of constructions in stable homotopy theory (see <a href="https://alkizar.github.io/project/graded_monoidal_categories">Graded Monoidal Categories and Internalization</a>).
+  * Used this framework to derive a common derivation for Day convolution and the smash product of S-modules and recover formal properties of both products syntactically.
   
-Technical Skills
+Teaching
 ======
-
-In general I am most comfortable working with systems, functional, and logic programming languages. I have substantial experience using the following:
-
-* Languages: Rust, C/C++, Lean, Haskell, Agda, Python, Java, Epilog
-* Toolkits: LLVM, Yacc, Flex, PyTorch, SciPy, CUDA, AWS Neuron
-* Other: LaTeX, cvc5, egglog
-
-Projects
-======
-  <ul>{% for post in site.publications reversed %}
+  <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
@@ -67,11 +42,18 @@ Talks
     {% include archive-single-cv.html %}
   {% endfor %}</ul>  
 
-Teaching
+Projects
 ======
-  <ul>{% for post in site.teaching reversed %}
+  <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+
+Technical Skills
+======
+
+* Languages: Rust, Haskell, Lean, C/C++, Agda, Python, Java, Epilog
+* Frameworks: LLVM, Bison/Yacc, Flex, CUDA, PyTorch, AWS Neuron
+* Other: LaTeX, cvc5, egglog
   
 Service and Leadership
 ======
