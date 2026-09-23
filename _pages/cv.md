@@ -22,8 +22,8 @@ Work Experience
 ======
 * Research Associate (June 2026 - Present)
   * <a href="https://topos.institute/">Topos Institute</a>
-  * Developed a DSL for specifying modal virtual double theories, for use in <a href="https://topos.institute/work/catcolab/">CatColab</a>'s DoubleTT component. [TODO]-link to repo once public
-  * Designed an accompanying type theory and operational semantics for modal VDCs. [TODO]-link to preprint once available
+  * Developed a DSL for specifying modal virtual double theories, for use in <a href="https://topos.institute/work/catcolab/">CatColab</a>'s DoubleTT component.
+  * Designed an accompanying type theory and formal semantics for modal VDCs. [TODO]-link to preprint once available
   * Supervised by Evan Patterson
 
 * Student Assistant (Summer 2024)

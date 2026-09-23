@@ -7,3 +7,30 @@ tags:
 ---
 
 [TODO]
+
+How do we know when a duck is a duck? 
+
+Looks Like a Duck
+======
+
+(if we know how something interacts with the universe then we know what it is)
+
+The Yoneda Lemma
+======
+
+(describe Yoneda)
+
+Quacks like a Duck
+======
+
+(what if we only know about *some* interactions?)
+
+Diagrams and Limits
+======
+
+(intro limits with the required machinery, explain how they are the best approximations for a diagram)
+
+Fuzzy Yoneda
+======
+
+(state UP of limits as an extension of Yoneda)
