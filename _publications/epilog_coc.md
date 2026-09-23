@@ -11,7 +11,7 @@ A basic proof assistant based on the calculus of constructions, supporting unive
 
 The language's syntax does not contain any surprises, but a BNF of the grammar is included below as a bargain-bin substitute for a genuine tutorial:
 
-```
+```text
 <Declaration>     ::= <Axiom> | <Def> | <Inductive> | <Struct>
 <Axiom>           ::= axiom <Name> : <Term>
 <Def>             ::= def <Name> .{<UniverseParams>}? <Param>* : <Term> := <Term>
