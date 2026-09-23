@@ -7,9 +7,9 @@ excerpt: 'An implementation of the calculus of constructions as a logic program'
 paperurl: 'https://github.com/Alkizar/epilog-coc'
 ---
 
-For my final project in Prof. Michael Genesereth's logic programming course at Stanford, I implemented a basic proof assistant in the logic programming language <a href='http://epilog.stanford.edu/homepage/index.php'>Epilog</a>. The calculus of constructions backend, which supports universe-polymorphic, inductive dependent types, is fully encoded as an Epilog ruleset. The primary advantage to this encoding is that the system can leverage the native term unification capabilities of Epilog to solve for universe metavariables, rather than requiring a custom solver built from scratch. (As a corollary, the system's universe polymorphism is limited by Epilog's solver, so occasionally the typechecker gets stuck where a more robust unifier may succeed.)
+A basic proof assistant based on the calculus of constructions, supporting universe polymorphism and (dependent) inductive types, built entirely in the logic programming language <a href='http://epilog.stanford.edu/homepage/index.php'>Epilog</a>. The primary advantage to this implementation is that the backend leverages the native term unification capabilities of Epilog to solve for universe metavariables. The frontend is just a primitive web interface for the typechecker. 
 
-Owing to my disdain for the user's experience (yes you, dear reader), the frontend is a primitive, barely usable Javascript interface for the typechecker. The language's syntax can likely be deduced by any initiate of Lean or Agda, but a BNF of the grammar is included below just in case:
+The language's syntax does not contain any surprises, but a BNF of the grammar is included below as a bargain-bin substitute for a genuine tutorial:
 
 ```
 <Declaration>     ::= <Axiom> | <Def> | <Inductive> | <Struct>
