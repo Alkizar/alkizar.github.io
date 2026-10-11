@@ -6,7 +6,7 @@ tags:
   - category theory
 ---
 
-[TODO]
+(Coming soon)
 
 How do we know when a duck is a duck? 
 
