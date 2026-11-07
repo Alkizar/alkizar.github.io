@@ -18,7 +18,6 @@ Like familiar theories of first-order logic, the theories of many categorical lo
 
 <iframe src="https://alkizar.github.io/files/slides/pl_for_vdc_slides/pl_for_vdc.html" width="100%" height="500px" title="A Programming Language for Virtual Double Theories"></iframe>
 
-<embed class='hide-on-mobile' src= 'https://alkizar.github.io/files/slides/pl_for_vdc_slides/pl_for_vdc.pdf' type='application/pdf' width="680" height="840">
 <a href='https://alkizar.github.io/files/slides/pl_for_vdc_slides/pl_for_vdc.pdf'>Download Slides (PDF)</a>
 
 <style>
