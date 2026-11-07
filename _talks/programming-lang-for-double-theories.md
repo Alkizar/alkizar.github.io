@@ -5,6 +5,7 @@ type: "Talk"
 permalink: /talks/programming-lang-for-double-theories
 venue: "Virtual Workshop on Double Categories"
 date: 2026-11-5
+location: "Online"
 ---
 
 Presented for the [Third Virtual Workshop on Double Categories](https://bryceclarke.github.io/virtual-double-categories-workshop/#bryce-goldman).
@@ -15,9 +16,10 @@ Like familiar theories of first-order logic, the theories of many categorical lo
 
 **Slides:** 
 
-<iframe src="https://alkizar.github.io/files/slides/pl_for_vdc.html" width="100%" height="500px" title="A Programming Language for Virtual Double Theories"></iframe>
+<iframe src="https://alkizar.github.io/files/slides/pl_for_vdc_slides/pl_for_vdc.html" width="100%" height="500px" title="A Programming Language for Virtual Double Theories"></iframe>
 
-TODO: include pdf of slides for download here
+<embed class='hide-on-mobile' src= 'https://alkizar.github.io/files/slides/pl_for_vdc_slides/pl_for_vdc.pdf' type='application/pdf' width="680" height="840">
+<a href='https://alkizar.github.io/files/slides/pl_for_vdc_slides/pl_for_vdc.pdf'>Download Slides (PDF)</a>
 
 <style>
 @media screen and (max-width: 568px) {
